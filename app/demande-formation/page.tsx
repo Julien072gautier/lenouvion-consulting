@@ -126,7 +126,7 @@ DATE_ENVOI: ${new Date().toLocaleDateString('fr-FR', {
 })}`;
 
     const result = await sendEmail({
-      to: 'contact@accertif.fr',
+      to: 'jacqueshenri.marin@lenouvion-consulting.fr',
       subject: "Demande de formation personnalisée - Lenouvion Consulting",
       text: emailContent
     });
