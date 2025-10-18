@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mentions Légales - FormaPro',
-  description: 'Mentions légales et informations légales de FormaPro, organisme de formation professionnelle.',
+  title: 'Mentions Légales - Lenouvion Consulting',
+  description: 'Mentions légales et informations légales de Lenouvion Consulting, organisme de formation professionnelle.',
   robots: 'index, follow',
 };
 
@@ -11,20 +11,28 @@ export default function MentionsLegales() {
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h1 className="text-3xl font-bold text-blue-600 mb-8">Mentions Légales</h1>
+          <h1 className="text-3xl font-bold text-brand mb-8">Mentions Légales</h1>
           
           <div className="prose prose-lg max-w-none">
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Éditeur du site</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <p><strong>Raison sociale :</strong> ACCERTIF</p>
-                <p><strong>Forme juridique :</strong> Société par Actions Simplifiée (SAS)</p>
-                <p><strong>Capital social :</strong> 1 000 €</p>
-                <p><strong>Siège social :</strong> 905 chemin de l'évêque, 82290 Montbeton, France</p>
-                <p><strong>SIRET :</strong> 91819995100016</p>
-                <p><strong>Numéro TVA :</strong> FR73918199951</p>
-                <p><strong>RCS :</strong> Montauban B 918 199 951</p>
-                <p><strong>Directeur de la publication :</strong> [Nom du directeur]</p>
+                <p><strong>Raison sociale :</strong> Lenouvion Consulting</p>
+                <p><strong>Forme juridique :</strong> SASU, société par actions simplifiée unipersonnelle</p>
+                <p><strong>Capital social :</strong> 10 000,00 €</p>
+                <p><strong>Siège social :</strong> 12 rue Chaigneau, 94210 Saint-Maur-des-Fossés</p>
+                <p><strong>SIREN :</strong> 980 112 536</p>
+                <p><strong>SIRET (siège) :</strong> 980 112 536 00019</p>
+                <p><strong>Numéro TVA :</strong> FR94980112536</p>
+                <p><strong>RCS :</strong> 980 112 536 R.C.S. Créteil</p>
+                <p><strong>Inscription au RCS :</strong> INSCRIT (au greffe de CRÉTEIL, le 04/10/2023)</p>
+                <p><strong>Inscription au RNE :</strong> INSCRIT</p>
+                <p><strong>Activité principale :</strong> 70.22Z (Conseil pour les affaires et autres conseils de gestion)</p>
+                <p><strong>Activité secondaire :</strong> Formation professionnelle</p>
+                <p><strong>Numéro NDA :</strong> 11941221894</p>
+                <p><strong>Date d'obtention :</strong> 2024-02-14</p>
+                <p><strong>Région :</strong> Ile-de-France</p>
+                <p><strong>Directeur de la publication :</strong> Jacques-Henri MARIN</p>
               </div>
             </section>
 
@@ -41,21 +49,21 @@ export default function MentionsLegales() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">3. Activités</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <p><strong>Activité principale :</strong> Conseil et accompagnement des professionnels de la formation</p>
-                <p><strong>Code APE :</strong> 7022Z - Conseil pour les affaires et autres conseils de gestion</p>
-                <p><strong>Activité secondaire :</strong> Organisme de formation pour adultes</p>
-                <p><strong>NDA :</strong> 76820111882</p>
-                <p><strong>Date d'enregistrement :</strong> 10/10/2022</p>
-                <p><strong>Région :</strong> Occitanie</p>
+                <p><strong>Activité principale :</strong> 70.22Z (Conseil pour les affaires et autres conseils de gestion)</p>
+                <p><strong>Activité secondaire :</strong> Formation professionnelle</p>
+                <p><strong>Numéro NDA :</strong> 11941221894</p>
+                <p><strong>Date d'obtention :</strong> 2024-02-14</p>
+                <p><strong>Région :</strong> Ile-de-France</p>
               </div>
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">4. Contact</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <p><strong>Téléphone :</strong> 09 75 85 65 10</p>
-                <p><strong>Email :</strong> contact@accertif.fr</p>
-                <p><strong>Adresse :</strong> 905 chemin de l'évêque, 82290 Montbeton, France</p>
+                <p><strong>Téléphone :</strong> 07 78 25 10 94</p>
+                <p><strong>Email :</strong> jacqueshenri.marin@lenouvion-consulting.fr</p>
+                <p><strong>Contact :</strong> Jacques-Henri MARIN</p>
+                <p><strong>Adresse :</strong> 12 rue Chaigneau, 94210 Saint-Maur-des-Fossés</p>
               </div>
             </section>
 
@@ -69,7 +77,7 @@ export default function MentionsLegales() {
                 La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication.
               </p>
               <p>
-                La marque et le logo ACCERTIF sont des marques déposées. Toute reproduction non autorisée de ces marques, dessins et modèles constitue une contrefaçon passible de sanctions pénales.
+                La marque et le logo Lenouvion Consulting sont des marques déposées. Toute reproduction non autorisée de ces marques, dessins et modèles constitue une contrefaçon passible de sanctions pénales.
               </p>
             </section>
 
@@ -79,7 +87,7 @@ export default function MentionsLegales() {
                 Les informations contenues sur ce site sont aussi précises que possible et le site remis à jour à différentes périodes de l'année, mais peut toutefois contenir des inexactitudes ou des omissions.
               </p>
               <p className="mb-4">
-                Si vous constatez une lacune, erreur ou ce qui parait être un dysfonctionnement, merci de bien vouloir le signaler par email, à l'adresse contact@accertif.fr, en décrivant le problème de la manière la plus précise possible.
+                Si vous constatez une lacune, erreur ou ce qui parait être un dysfonctionnement, merci de bien vouloir le signaler par email, à l'adresse jacqueshenri.marin@lenouvion-consulting.fr, en décrivant le problème de la manière la plus précise possible.
               </p>
               <p>
                 Tout contenu téléchargé se fait aux risques et périls de l'utilisateur et sous sa seule responsabilité. En conséquence, ne saurait être tenu responsable d'un quelconque dommage subi par l'ordinateur de l'utilisateur ou d'une quelconque perte de données consécutives au téléchargement.
@@ -89,7 +97,7 @@ export default function MentionsLegales() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">7. Liens hypertextes</h2>
               <p className="mb-4">
-                Des liens hypertextes peuvent être présents sur le site. L'utilisateur est informé qu'en cliquant sur ces liens, il sortira du site accertif.fr. 
+                Des liens hypertextes peuvent être présents sur le site. L'utilisateur est informé qu'en cliquant sur ces liens, il sortira du site lenouvion-consulting.fr. 
                 Ce dernier n'a pas de contrôle sur les pages web sur lesquelles aboutissent ces liens et ne saurait, en aucun cas, être responsable de leur contenu.
               </p>
             </section>
@@ -97,8 +105,8 @@ export default function MentionsLegales() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">8. Droit applicable</h2>
               <p>
-                Tout litige en relation avec l'utilisation du site accertif.fr est soumis au droit français. 
-                Il est fait attribution exclusive de juridiction aux tribunaux compétents de Montauban.
+                Tout litige en relation avec l'utilisation du site lenouvion-consulting.fr est soumis au droit français. 
+                Il est fait attribution exclusive de juridiction aux tribunaux compétents de Créteil.
               </p>
             </section>
 
@@ -106,7 +114,7 @@ export default function MentionsLegales() {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">9. Médiation</h2>
               <p className="mb-4">
                 Conformément aux dispositions de l'article L.616-1 du Code de la consommation concernant le règlement amiable des litiges, 
-                ACCERTIF adhère au Service du Médiateur de la CNPM Médiation Consommation 
+                Lenouvion Consulting adhère au Service du Médiateur de la CNPM Médiation Consommation 
                 dont les coordonnées sont les suivantes :
               </p>
               <div className="bg-gray-50 p-6 rounded-lg">

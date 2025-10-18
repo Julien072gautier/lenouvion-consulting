@@ -11,43 +11,12 @@ interface FormationCardProps {
 }
 
 const FormationCard: React.FC<FormationCardProps> = ({ formation, isCompact = false }) => {
-  // Fonction pour formater les informations de certification
+  // Fonction pour formater les informations de certification - Logique Zuma exacte
   const formatCertification = () => {
-    // Priorité au champ formationType (pour l'API future)
-    if (formation.formationType) {
-      switch (formation.formationType) {
-        case 'non-certifiante':
-          return 'Formation non-certifiante';
-        case 'partenariat':
-          if (formation.certificationDetails?.partenaire) {
-            return `En partenariat avec ${formation.certificationDetails.partenaire}`;
-          }
-          break;
-        case 'certifiante':
-          if (formation.certificationDetails?.organization) {
-            return `Certifié par ${formation.certificationDetails.organization}`;
-          }
-          break;
-      }
-    }
-    
-    // Fallback sur la logique Zuma (compatibilité)
-    if (!formation.cpfEligible && !formation.certificationDetails) {
-      return 'Formation non-certifiante';
-    }
-    
-    // Gestion des formations certifiantes et en partenariat
-    if (formation.certificationDetails) {
-      const { organization, partenaire } = formation.certificationDetails;
-      return partenaire ? `En partenariat avec ${partenaire}` : `Certifié par ${organization}`;
-    }
-    
-    // Fallback sur l'ancien système
-    if (formation.certifications && formation.certifications.length > 0) {
-      return formation.certifications[0];
-    }
-    
-    return null;
+    // Logique Zuma exacte (identique à app/formations/page.tsx ligne 80-82)
+    return formation.certificationDetails ? 
+      (formation.certificationDetails.partenaire ? `En partenariat avec ${formation.certificationDetails.partenaire}` : 
+       formation.certificationDetails.code ? `Certifié par ${formation.certificationDetails.organization}` : "") : "";
   };
 
   const certificationText = formatCertification();
@@ -64,6 +33,7 @@ const FormationCard: React.FC<FormationCardProps> = ({ formation, isCompact = fa
             e.currentTarget.src = '/images/formations/default.jpg';
           }} 
         />
+        {/* Badge CPF - Logique Zuma exacte */}
         {formation.cpfEligible && (
           <div className="absolute top-4 right-4 bg-brand text-white text-xs font-bold px-2 py-1 rounded uppercase">
             CPF

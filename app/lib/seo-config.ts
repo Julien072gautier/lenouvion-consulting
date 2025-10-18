@@ -1,21 +1,21 @@
-// Configuration SEO centralisée pour FormaPro by Accertif
+// Configuration SEO centralisée pour Lenouvion Consulting
 
 export const SEO_CONFIG = {
   // Informations de base
-  siteName: 'FormaPro by Accertif',
-  siteUrl: 'https://www.formaprobyaccertif.fr',
-  siteDescription: 'Organisme de formation professionnelle certifié Qualiopi spécialisé dans les Form\'actions certifiantes sur-mesure. Formations éligibles CPF en intelligence artificielle, langues étrangères, communication et community management.',
+  siteName: 'Lenouvion Consulting',
+  siteUrl: 'https://www.lenouvion-consulting.fr',
+  siteDescription: 'Formation IA pour Dirigeants - Jacques-Henri Marin aide les dirigeants de PME à faire de l\'IA un levier de leadership, pas un projet IT. 30% de gains dès le premier mois.',
   
   // Contact
-  contactEmail: 'hello@formaprobyaccertif.fr',
-  contactPhone: '09 75 85 65 10',
-  address: '905 Chemin de l\'Évêque, 82290 Montbeton, France',
+  contactEmail: 'jacqueshenri.marin@lenouvion-consulting.fr',
+  contactPhone: '07 78 25 10 94',
+  address: '12 rue Chaigneau, 94210 Saint-Maur-des-Fossés',
   
   // Réseaux sociaux
   socialMedia: {
-    linkedin: 'https://www.linkedin.com/company/93788178',
-    facebook: 'https://www.facebook.com/formapro',
-    twitter: 'https://twitter.com/formapro'
+    linkedin: 'https://www.linkedin.com/company/lenouvion-consulting',
+    facebook: 'https://www.facebook.com/lenouvionconsulting',
+    twitter: 'https://twitter.com/lenouvionconsulting'
   },
   
   // Certification
@@ -27,20 +27,20 @@ export const SEO_CONFIG = {
   
   // Images par défaut
   defaultImages: {
-    logo: '/images/logos/formapro-logo.png',
-    ogImage: '/images/logos/formapro-og.jpg',
+    logo: '/images/logos/lenouvion-logo.png',
+    ogImage: '/images/logos/lenouvion-og.jpg',
     favicon: '/iceberg.png'
   },
   
   // Mots-clés principaux
   mainKeywords: [
-    'formation professionnelle',
-    'CPF',
-    'Qualiopi',
-    'FormaPro by Accertif',
-    'formation certifiée',
-    'formation éligible CPF',
-    'organisme de formation'
+    'formation IA dirigeants',
+    'intelligence artificielle PME',
+    'Jacques-Henri Marin',
+    'Lenouvion Consulting',
+    'formation IA leadership',
+    'automatisation PME',
+    'transformation digitale dirigeants'
   ],
   
   // Horaires d'ouverture

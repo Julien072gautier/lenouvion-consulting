@@ -77,8 +77,9 @@ const FormationsPage: React.FC = () => {
           category: formationsConfig.categories.find(cat => cat.id === formation.category)?.name || formation.category,
           level: "Intermédiaire", // Valeur par défaut
           duration: formation.duration,
-          certification: formation.certificationDetails && formation.certificationDetails.code ? 
-            (formation.certificationDetails.partenaire ? `En partenariat avec ${formation.certificationDetails.partenaire}` : `Certifié par ${formation.certificationDetails.organization}`) : "",
+          certification: formation.certificationDetails ? 
+            (formation.certificationDetails.partenaire ? `En partenariat avec ${formation.certificationDetails.partenaire}` : 
+             formation.certificationDetails.code ? `Certifié par ${formation.certificationDetails.organization}` : "") : "",
           price: formation.prices.collectif.price,
           cpf: formation.cpfEligible,
           description: formation.shortDescription,
@@ -86,22 +87,7 @@ const FormationsPage: React.FC = () => {
           icon: formationsConfig.categories.find(cat => cat.id === formation.category)?.icon || "MessageSquare",
           path: `/formation/${formation.slug.replace('formation-', '')}`
         }))
-        .sort((a, b) => {
-          // Fonction pour extraire la première lettre significative du titre
-          const getFirstLetter = (title: string) => {
-            // Supprimer les articles français courants au début
-            const cleanTitle = title
-              .replace(/^(L'|D'|Un |Une |Le |La |Les |Des |Du |De |D'|L'|A |À |Au |Aux )/i, '')
-              .replace(/^[^a-zA-ZÀ-ÿ]*/, '') // Supprimer tout ce qui n'est pas une lettre au début
-              .trim();
-            return cleanTitle.charAt(0).toLowerCase();
-          };
-          
-          const firstLetterA = getFirstLetter(a.title);
-          const firstLetterB = getFirstLetter(b.title);
-          
-          return firstLetterA.localeCompare(firstLetterB, 'fr', { sensitivity: 'base' });
-        });
+        // Pas de tri - garder l'ordre défini dans formationsConfig
     }
     
     // Fallback si pas de formations dans la config
@@ -165,7 +151,7 @@ const FormationsPage: React.FC = () => {
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Nos Form'actions Certifiantes</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">Nos formations Certifiantes</h1>
           <p className="text-gray-600 text-lg mb-4">
             Découvrez notre catalogue de formations certifiantes conçues pour développer vos compétences professionnelles et booster votre carrière.
           </p>

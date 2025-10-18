@@ -1,16 +1,16 @@
-// Configuration centralisée des statistiques FORMAPRO
+// Configuration centralisée des statistiques Lenouvion Consulting
 export const STATS_CONFIG = {
   // Statistiques principales
-  apprenantsFormes: 415,
-  satisfaction: 98,
-  nouvellesCompetences: 98,
+  apprenantsFormes: 50,
+  satisfaction: 4.72,
+  nouvellesCompetences: 30,
   financement: 100,
   recommandation: 100,
   expertiseFormateurs: 98,
   
   // Métadonnées
-  apprenantsFormesLabel: "apprenants formés",
-  nouvellesCompetencesLabel: "ont acquis de nouvelles compétences",
+  apprenantsFormesLabel: "dirigeants formés",
+  nouvellesCompetencesLabel: "de gains dès le 1er mois",
   financementLabel: "finançable",
   recommandationLabel: "recommandent nos formations",
   expertiseFormateursLabel: "soulignent l'expertise des formateurs",
@@ -21,26 +21,26 @@ export const STATS_CONFIG = {
   
   // Groupes de statistiques pour différents affichages
   hero: {
-    apprenantsFormes: 415,
-    nouvellesCompetences: 98, // Hero affiche "nouvelles compétences"
+    apprenantsFormes: 50,
+    nouvellesCompetences: 30, // Hero affiche "de gains dès le 1er mois"
     financement: 100,
     labels: {
-      apprenantsFormes: "apprenants formés",
-      nouvellesCompetences: "ont acquis de nouvelles compétences", 
+      apprenantsFormes: "dirigeants formés",
+      nouvellesCompetences: "de gains dès le 1er mois", 
       financement: "finançable"
     }
   },
   
   bottom: {
-    apprenantsFormes: 415,
-    nouvellesCompetences: 98, // Bottom affiche aussi "nouvelles compétences"
+    apprenantsFormes: 50,
+    nouvellesCompetences: 30, // Bottom affiche aussi "de gains dès le 1er mois"
     recommandation: 100,
-    expertiseFormateurs: 98,
+    expertiseFormateurs: 4.72,
     labels: {
-      apprenantsFormes: "apprenants formés",
-      nouvellesCompetences: "ont acquis de nouvelles compétences",
+      apprenantsFormes: "dirigeants formés",
+      nouvellesCompetences: "de gains dès le 1er mois",
       recommandation: "recommandent nos formations",
-      expertiseFormateurs: "soulignent l'expertise des formateurs"
+      expertiseFormateurs: "/5 de satisfaction"
     }
   }
 };

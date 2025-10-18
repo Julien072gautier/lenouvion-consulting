@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${formation.title} - FORMAPRO by ACCERTIF`,
+    title: `${formation.title} - Lenouvion Consulting`,
     description: formation.shortDescription,
     openGraph: {
       title: formation.title,

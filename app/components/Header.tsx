@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ExternalLink } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,18 +13,13 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image 
-            src="https://irp.cdn-website.com/e0ab763a/dms3rep/multi/Logo-bdcdc0e7.png" 
-            alt="FORMAPRO by Accertif" 
-            width={120}
-            height={40}
-            className="h-10 w-auto mr-2"
+            src="/logo.png" 
+            alt="Lenouvion Consulting" 
+            width={300}
+            height={100}
+            className="h-24 w-auto mr-2"
             priority
           />
-          <span className="text-2xl font-bold hidden">
-            <span className="text-black">FORMA</span>
-            <span className="text-brand">PRO</span>
-            <span className="text-gray-500 text-sm ml-1">by Accertif</span>
-          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -41,15 +36,6 @@ const Header = () => {
           <Link href="/contact" className="text-gray-800 hover:text-brand font-medium transition-colors">
             Contact
           </Link>
-          <a 
-            href="https://skillup.accertif.fr" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn-primary btn-md btn-with-icon"
-          >
-            <span>SKILLUP</span>
-            <ExternalLink size={16} className="ml-2" />
-          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -94,16 +80,6 @@ const Header = () => {
             >
               Contact
             </Link>
-            <a 
-              href="https://skillup.accertif.fr" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="btn-primary btn-md btn-with-icon"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <span>SKILLUP</span>
-              <ExternalLink size={16} className="ml-2" />
-            </a>
           </nav>
         </div>
       )}

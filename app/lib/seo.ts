@@ -12,71 +12,49 @@ interface SEOData {
 
 // Données des formations pour le SEO
 export const formationData = {
-  'anglais-professionnel': {
-    name: 'Anglais Professionnel',
-    shortDescription: 'Développez des automatismes de communication en anglais et renforcez votre impact professionnel à l\'international.',
-    fullDescription: 'Formation professionnelle en anglais certifiée LILATE - RS6118. Développez vos compétences linguistiques pour communiquer efficacement en anglais dans un contexte professionnel. Formation éligible CPF.',
-    keywords: ['anglais professionnel', 'formation anglais', 'certification LILATE', 'anglais entreprise', 'communication internationale'],
-    duration: '30 heures',
-    price: '1950€',
-    skills: ['Communication en anglais', 'Vocabulaire professionnel', 'Grammaire anglaise', 'Présentation en anglais'],
-    image: '/images/formations/anglais-og.jpg',
-    certification: 'LILATE - RS6118'
-  },
-  'allemand-professionnel': {
-    name: 'Allemand Professionnel',
-    shortDescription: 'Maîtrisez l\'allemand professionnel pour développer vos relations commerciales et votre carrière.',
-    fullDescription: 'Formation professionnelle en allemand pour améliorer vos compétences linguistiques en contexte professionnel. Formation éligible CPF.',
-    keywords: ['allemand professionnel', 'formation allemand', 'allemand entreprise', 'communication allemande'],
-    duration: '30 heures',
-    price: '1950€',
-    skills: ['Communication en allemand', 'Vocabulaire professionnel', 'Grammaire allemande'],
-    image: '/images/formations/allemand-og.jpg',
-    certification: 'Certification professionnelle'
-  },
-  'espagnol-professionnel': {
-    name: 'Espagnol Professionnel',
-    shortDescription: 'Développez vos compétences en espagnol pour élargir vos opportunités professionnelles.',
-    fullDescription: 'Formation professionnelle en espagnol pour communiquer efficacement dans un contexte professionnel hispanophone. Formation éligible CPF.',
-    keywords: ['espagnol professionnel', 'formation espagnol', 'espagnol entreprise', 'communication espagnole'],
-    duration: '30 heures',
-    price: '1950€',
-    skills: ['Communication en espagnol', 'Vocabulaire professionnel', 'Grammaire espagnole'],
-    image: '/images/formations/espagnol-og.jpg',
-    certification: 'Certification professionnelle'
-  },
-  'communication-prise-parole': {
-    name: 'Communication et Prise de Parole',
-    shortDescription: 'Maîtrisez l\'art de la communication et de la prise de parole en public.',
-    fullDescription: 'Formation professionnelle en communication et techniques de prise de parole en public. Développez votre charisme et votre impact lors de présentations. Formation éligible CPF.',
-    keywords: ['communication', 'prise de parole', 'présentation', 'charisme', 'leadership'],
-    duration: '30 heures',
-    price: '1950€',
-    skills: ['Prise de parole en public', 'Communication non verbale', 'Présentation', 'Leadership'],
-    image: '/images/formations/communication-og.jpg',
-    certification: 'Certification professionnelle'
-  },
   'ia-vente': {
     name: 'IA et Vente',
-    shortDescription: 'Intégrez l\'intelligence artificielle dans vos stratégies de vente et de marketing.',
-    fullDescription: 'Formation professionnelle en intelligence artificielle appliquée à la vente et au marketing. Découvrez les outils IA pour optimiser vos performances commerciales. Formation éligible CPF.',
-    keywords: ['intelligence artificielle', 'IA vente', 'marketing digital', 'outils IA', 'vente'],
-    duration: '30 heures',
+    shortDescription: 'Maîtrisez l\'utilisation de l\'IA pour optimiser votre processus commercial et augmenter vos performances de vente.',
+    fullDescription: 'Formation professionnelle en Intelligence Artificielle appliquée à la vente en partenariat avec Formapro by Accertif. Optimisez votre processus commercial et augmentez vos performances. Formation éligible CPF.',
+    keywords: ['IA vente', 'formation IA', 'intelligence artificielle', 'automatisation commerciale', 'processus de vente', 'Formapro by Accertif'],
+    duration: '14 heures',
     price: '1950€',
-    skills: ['Intelligence artificielle', 'Outils IA', 'Marketing digital', 'Stratégies de vente'],
-    image: '/images/formations/ia-og.jpg',
-    certification: 'Certification professionnelle'
+    skills: ['IA conversationnelle', 'Automatisation commerciale', 'Analyse prédictive', 'Outils IA avancés'],
+    image: '/ia.png',
+    certification: 'En partenariat avec Formapro by Accertif'
   },
-  'community-management': {
-    name: 'Community Management',
-    shortDescription: 'Maîtrisez la gestion de communautés et l\'animation de réseaux sociaux.',
-    fullDescription: 'Formation professionnelle en community management et gestion de réseaux sociaux. Apprenez à créer et animer des communautés en ligne. Formation éligible CPF.',
-    keywords: ['community management', 'réseaux sociaux', 'animation communauté', 'social media'],
-    duration: '30 heures',
-    price: '1950€',
-    skills: ['Community Management', 'Réseaux sociaux', 'Animation de communauté', 'Content marketing'],
-    image: '/images/formations/community-og.jpg',
-    certification: 'Certification professionnelle'
+  'vision-ia-strategie': {
+    name: 'Vision IA : De la curiosité à la stratégie',
+    shortDescription: 'Clarifiez votre vision IA et alignez-la avec votre stratégie d\'entreprise. Cartographiez les enjeux sectoriels et identifiez les quick wins stratégiques.',
+    fullDescription: 'Atelier stratégique en présentiel pour dirigeants souhaitant clarifier leur vision IA et l\'aligner avec leur stratégie d\'entreprise. Cartographie des enjeux sectoriels, définition de la vision IA et identification des priorités stratégiques.',
+    keywords: ['vision IA', 'stratégie IA', 'atelier dirigeants', 'quick wins IA', 'transformation digitale dirigeants'],
+    duration: '7 heures',
+    price: '1900€',
+    skills: ['Cartographie des enjeux sectoriels', 'Définition de la vision IA', 'Identification des priorités stratégiques', 'Construction du discours dirigeant'],
+    image: '/ia.png',
+    certification: 'Formation non-certifiante'
+  },
+  'activation-ia-vision-action': {
+    name: 'Activation de l\'IA : Passer de la vision à l\'action',
+    shortDescription: 'Initiez les premiers déploiements d\'outils IA, réinventez des processus métier clés et formez vos équipes dirigeantes pour créer un réseau de champions IA.',
+    fullDescription: 'Atelier pratique de 2 jours pour initier les premiers déploiements d\'outils IA générative, réinventer des processus métier clés avec l\'IA, former les équipes dirigeantes et créer un réseau de champions IA avec un plan de montée en compétences.',
+    keywords: ['activation IA', 'déploiement IA', 'processus métier IA', 'champions IA', 'transformation IA dirigeants', 'outils IA générative'],
+    duration: '14 heures',
+    price: '3600€',
+    skills: ['Déploiement d\'outils IA générative', 'Réinvention de processus métier', 'Formation des équipes dirigeantes', 'Création du réseau de champions IA'],
+    image: '/ia.png',
+    certification: 'Formation non-certifiante'
+  },
+  'innovation-ia-offres-modeles': {
+    name: 'Innovation Propulsée par l\'IA : Créer de nouvelles offres et modèles',
+    shortDescription: 'Explorer comment l\'IA transforme la proposition de valeur client. Générer de nouvelles sources de revenus. Structurer un portefeuille de cas d\'usage innovants. Introduire la gouvernance IA responsable.',
+    fullDescription: 'Atelier Design Thinking IA pour créer de nouveaux services et produits. Explorez comment l\'IA transforme la proposition de valeur client, générez de nouvelles sources de revenus, structurez un portefeuille de cas d\'usage innovants et introduisez la gouvernance IA responsable.',
+    keywords: ['innovation IA', 'design thinking IA', 'nouvelles offres IA', 'gouvernance IA', 'cas d\'usage IA', 'business model IA'],
+    duration: '14 heures',
+    price: '3900€',
+    skills: ['Atelier Design Thinking IA', 'Études de cas sectoriels', 'Structuration du portefeuille de cas d\'usage', 'Gouvernance IA responsable'],
+    image: '/ia.png',
+    certification: 'Formation non-certifiante'
   }
 }
 
@@ -85,7 +63,7 @@ export function generateFormationSEO(formationSlug: string): SEOData {
   
   if (!formation) {
     return {
-      title: 'Formation | FormaPro by Accertif',
+      title: 'Formation | Lenouvion Consulting',
       description: 'Formation professionnelle certifiée Qualiopi éligible CPF.',
       keywords: ['formation professionnelle', 'CPF', 'Qualiopi'],
       canonical: `/formation/${formationSlug}`,
@@ -94,7 +72,7 @@ export function generateFormationSEO(formationSlug: string): SEOData {
   }
 
   return {
-    title: `Formation ${formation.name} | FormaPro by Accertif`,
+    title: `Formation ${formation.name} | Lenouvion Consulting`,
     description: `Formation professionnelle ${formation.name} certifiée Qualiopi. ${formation.shortDescription} Éligible CPF. Inscrivez-vous dès maintenant.`,
     keywords: [
       `formation ${formation.name.toLowerCase()}`,
@@ -114,8 +92,8 @@ export function generateFormationSEO(formationSlug: string): SEOData {
       "description": formation.fullDescription,
       "provider": {
         "@type": "EducationalOrganization",
-        "name": "FormaPro by Accertif",
-        "url": "https://www.formaprobyaccertif.fr"
+        "name": "Lenouvion Consulting",
+        "url": "https://www.lenouvion-consulting.fr"
       },
       "hasCourseInstance": {
         "@type": "CourseInstance",
@@ -123,7 +101,7 @@ export function generateFormationSEO(formationSlug: string): SEOData {
         "courseWorkload": formation.duration,
         "instructor": {
           "@type": "Person",
-          "name": "Équipe FormaPro by Accertif"
+          "name": "Équipe Lenouvion Consulting"
         }
       },
       "offers": {
@@ -131,12 +109,12 @@ export function generateFormationSEO(formationSlug: string): SEOData {
         "price": formation.price,
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "url": `https://www.formaprobyaccertif.fr/formation/${formationSlug}`
+        "url": `https://www.lenouvion-consulting.fr/formation/${formationSlug}`
       },
       "educationalCredentialAwarded": formation.certification,
       "teaches": formation.skills,
       "image": formation.image,
-      "url": `https://www.formaprobyaccertif.fr/formation/${formationSlug}`
+      "url": `https://www.lenouvion-consulting.fr/formation/${formationSlug}`
     }
   }
 }
@@ -144,24 +122,24 @@ export function generateFormationSEO(formationSlug: string): SEOData {
 export function generatePageSEO(pageType: string, customData?: any): SEOData {
   const baseSEO = {
     website: {
-      title: 'FormaPro by Accertif - Formation Professionnelle de Qualité | Certifiée Qualiopi',
-      description: 'FormaPro by Accertif propose des formations professionnelles certifiées Qualiopi dans de nombreux domaines. Formations éligibles CPF avec un accompagnement personnalisé.',
-      keywords: ['formation professionnelle', 'CPF', 'Qualiopi', 'intelligence artificielle', 'langues étrangères', 'communication']
+      title: 'Lenouvion Consulting - Formation Professionnelle de Qualité | Certifiée Qualiopi',
+      description: 'Lenouvion Consulting propose des formations professionnelles certifiées Qualiopi en IA, communication et community management. Formations éligibles CPF avec un accompagnement personnalisé.',
+      keywords: ['formation professionnelle', 'CPF', 'Qualiopi', 'intelligence artificielle', 'communication', 'community management']
     },
     formations: {
-      title: 'Toutes nos Formations Professionnelles | FormaPro by Accertif',
-      description: 'Découvrez toutes nos formations professionnelles certifiées Qualiopi : IA, langues étrangères, communication, community management. Éligibles CPF.',
+      title: 'Toutes nos Formations Professionnelles | Lenouvion Consulting',
+      description: 'Découvrez toutes nos formations professionnelles certifiées Qualiopi : IA et vente, communication, community management. Éligibles CPF.',
       keywords: ['formations professionnelles', 'liste formations', 'catalogue formation', 'CPF', 'Qualiopi']
     },
     contact: {
-      title: 'Contactez-nous | FormaPro by Accertif',
-      description: 'Contactez FormaPro by Accertif pour plus d\'informations sur nos formations professionnelles. Notre équipe vous accompagne dans votre projet de formation.',
+      title: 'Contactez-nous | Lenouvion Consulting',
+      description: 'Contactez Lenouvion Consulting pour plus d\'informations sur nos formations professionnelles. Notre équipe vous accompagne dans votre projet de formation.',
       keywords: ['contact FormaPro', 'information formation', 'conseiller formation', 'accompagnement']
     },
     about: {
-      title: 'À Propos de FormaPro by Accertif | Organisme de Formation Certifié',
-      description: 'FormaPro by Accertif est un organisme de formation certifié Qualiopi. Découvrez notre histoire, nos valeurs et notre engagement qualité.',
-      keywords: ['FormaPro by Accertif', 'organisme formation', 'Qualiopi', 'à propos', 'certification qualité']
+      title: 'À Propos de Lenouvion Consulting | Organisme de Formation Certifié',
+      description: 'Lenouvion Consulting est un organisme de formation certifié Qualiopi. Découvrez notre histoire, nos valeurs et notre engagement qualité.',
+      keywords: ['Lenouvion Consulting', 'organisme formation', 'Qualiopi', 'à propos', 'certification qualité']
     }
   }
 
@@ -176,7 +154,7 @@ export function generateBreadcrumbStructuredData(breadcrumbs: Array<{name: strin
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://www.formaprobyaccertif.fr${item.url}`
+      "item": `https://www.lenouvion-consulting.fr${item.url}`
     }))
   }
 }
@@ -196,14 +174,14 @@ export function generateAllFormationsMetadata() {
       openGraph: {
         title: seoData.title,
         description: seoData.description,
-        url: `https://www.formaprobyaccertif.fr/formation/${slug}`,
+        url: `https://www.lenouvion-consulting.fr/formation/${slug}`,
         type: 'article',
         images: [
           {
             url: seoData.ogImage || `/images/formations/${slug}-og.jpg`,
             width: 1200,
             height: 630,
-            alt: `Formation ${formation?.name} - FormaPro by Accertif`,
+            alt: `Formation ${formation?.name} - Lenouvion Consulting`,
           },
         ],
       },
@@ -214,7 +192,7 @@ export function generateAllFormationsMetadata() {
         images: [seoData.ogImage || `/images/formations/${slug}-og.jpg`],
       },
       alternates: {
-        canonical: `https://www.formaprobyaccertif.fr/formation/${slug}`,
+        canonical: `https://www.lenouvion-consulting.fr/formation/${slug}`,
       },
     }
   })
@@ -234,14 +212,14 @@ export function getFormationMetadata(slug: string): Metadata {
     openGraph: {
       title: seoData.title,
       description: seoData.description,
-      url: `https://www.formaprobyaccertif.fr/formation/${slug}`,
+      url: `https://www.lenouvion-consulting.fr/formation/${slug}`,
       type: 'article',
       images: [
         {
           url: seoData.ogImage || `/images/formations/${slug}-og.jpg`,
           width: 1200,
           height: 630,
-          alt: `Formation ${formation?.name} - FormaPro by Accertif`,
+          alt: `Formation ${formation?.name} - Lenouvion Consulting`,
         },
       ],
     },
@@ -252,7 +230,7 @@ export function getFormationMetadata(slug: string): Metadata {
       images: [seoData.ogImage || `/images/formations/${slug}-og.jpg`],
     },
     alternates: {
-      canonical: `https://www.formaprobyaccertif.fr/formation/${slug}`,
+      canonical: `https://www.lenouvion-consulting.fr/formation/${slug}`,
     },
   }
 }

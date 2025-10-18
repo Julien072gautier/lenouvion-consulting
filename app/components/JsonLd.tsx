@@ -4,20 +4,20 @@ export function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    "name": "FormaPro by Accertif",
-    "alternateName": ["FormaPro", "FormaPro Formation"],
-    "description": "Organisme de formation professionnelle certifié Qualiopi spécialisé dans les Form'actions certifiantes sur-mesure. Formations éligibles CPF en intelligence artificielle, langues étrangères, communication et community management.",
-    "url": "https://www.formaprobyaccertif.fr",
+    "name": "Lenouvion Consulting",
+    "alternateName": ["Lenouvion", "Nouvion Consulting"],
+    "description": "Organisme de formation professionnelle certifié Qualiopi spécialisé dans les formations certifiantes sur-mesure. Formations éligibles CPF en intelligence artificielle, langues étrangères, communication et community management.",
+    "url": "https://www.lenouvion-consulting.fr",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.formaprobyaccertif.fr/images/logos/formapro-logo.png",
+      "url": "https://www.lenouvion-consulting.fr/images/logos/lenouvion-logo.png",
       "width": 120,
       "height": 40
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+33-XX-XX-XX-XX-XX",
-      "email": "hello@formaprobyaccertif.fr",
+      "telephone": "+33-7-78-25-10-94",
+      "email": "jacqueshenri.marin@lenouvion-consulting.fr",
       "contactType": "Customer Service",
       "availableLanguage": ["French"],
       "areaServed": "FR",
@@ -30,13 +30,15 @@ export function JsonLd() {
     },
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "FR",
-      "addressLocality": "France"
+      "streetAddress": "12 rue Chaigneau",
+      "postalCode": "94210",
+      "addressLocality": "saint-maur-des-fossés",
+      "addressCountry": "FR"
     },
     "sameAs": [
-      "https://www.linkedin.com/company/formapro",
-      "https://www.facebook.com/formapro",
-      "https://twitter.com/formapro"
+      "https://www.linkedin.com/company/lenouvion-consulting",
+      "https://www.facebook.com/lenouvionconsulting",
+      "https://twitter.com/lenouvionconsulting"
     ],
     "hasCredential": {
       "@type": "EducationalOccupationalCredential",
@@ -59,7 +61,7 @@ export function JsonLd() {
         "description": "Formation professionnelle en intelligence artificielle appliquée à la vente et au marketing",
         "provider": {
           "@type": "EducationalOrganization",
-          "name": "FormaPro by Accertif"
+          "name": "Lenouvion Consulting"
         },
         "educationalLevel": "Formation professionnelle",
         "teaches": ["Intelligence artificielle", "Vente", "Marketing digital"]
@@ -70,7 +72,7 @@ export function JsonLd() {
         "description": "Formation professionnelle en communication et techniques de prise de parole en public",
         "provider": {
           "@type": "EducationalOrganization",
-          "name": "FormaPro by Accertif"
+          "name": "Lenouvion Consulting"
         },
         "educationalLevel": "Formation professionnelle",
         "teaches": ["Communication", "Prise de parole", "Présentation"]
@@ -81,7 +83,7 @@ export function JsonLd() {
         "description": "Formation professionnelle en gestion de communautés et réseaux sociaux",
         "provider": {
           "@type": "EducationalOrganization",
-          "name": "FormaPro by Accertif"
+          "name": "Lenouvion Consulting"
         },
         "educationalLevel": "Formation professionnelle",
         "teaches": ["Community Management", "Réseaux sociaux", "Marketing digital"]
@@ -92,7 +94,7 @@ export function JsonLd() {
         "description": "Formation en anglais professionnel pour améliorer ses compétences linguistiques en entreprise",
         "provider": {
           "@type": "EducationalOrganization",
-          "name": "FormaPro by Accertif"
+          "name": "Lenouvion Consulting"
         },
         "educationalLevel": "Formation professionnelle",
         "teaches": ["Anglais professionnel", "Communication internationale"]
@@ -129,8 +131,8 @@ export function FormationJsonLd({ formationSlug }: { formationSlug: string }) {
     "description": formation.fullDescription,
     "provider": {
       "@type": "EducationalOrganization",
-      "name": "FormaPro by Accertif",
-      "url": "https://www.formaprobyaccertif.fr"
+      "name": "Lenouvion Consulting",
+      "url": "https://www.lenouvion-consulting.fr"
     },
     "hasCourseInstance": {
       "@type": "CourseInstance",
@@ -138,7 +140,7 @@ export function FormationJsonLd({ formationSlug }: { formationSlug: string }) {
       "courseWorkload": formation.duration,
       "instructor": {
         "@type": "Person",
-        "name": "Équipe FormaPro by Accertif"
+        "name": "Équipe Lenouvion Consulting"
       }
     },
     "offers": {
@@ -146,12 +148,12 @@ export function FormationJsonLd({ formationSlug }: { formationSlug: string }) {
       "price": formation.price,
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
-      "url": `https://www.formaprobyaccertif.fr/formation/${formationSlug}`
+      "url": `https://www.lenouvion-consulting.fr/formation/${formationSlug}`
     },
     "educationalCredentialAwarded": formation.certification,
     "teaches": formation.skills,
     "image": formation.image,
-    "url": `https://www.formaprobyaccertif.fr/formation/${formationSlug}`
+    "url": `https://www.lenouvion-consulting.fr/formation/${formationSlug}`
   }
 
   return (

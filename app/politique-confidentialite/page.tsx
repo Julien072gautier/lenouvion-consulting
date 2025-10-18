@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Politique de Confidentialité - FormaPro',
-  description: 'Politique de confidentialité et protection des données personnelles de FormaPro.',
+  title: 'Politique de Confidentialité - Lenouvion Consulting',
+  description: 'Politique de confidentialité et protection des données personnelles de Lenouvion Consulting.',
   robots: 'index, follow',
 };
 
@@ -11,14 +11,14 @@ export default function PolitiqueConfidentialite() {
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h1 className="text-3xl font-bold text-blue-600 mb-8">Politique de Confidentialité</h1>
+          <h1 className="text-3xl font-bold text-brand mb-8">Politique de Confidentialité</h1>
           
           <div className="prose prose-lg max-w-none">
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Introduction</h2>
               <p className="mb-4">
-                ACCERTIF, société par actions simplifiée au capital de 1 000 €, immatriculée au RCS de Montauban sous le numéro 918 199 951, 
-                dont le siège social est situé 905 chemin de l'évêque, 82290 Montbeton, France, s'engage à protéger la confidentialité et la sécurité 
+                Lenouvion Consulting, SASU au capital de 10 000,00 €, immatriculée au RCS de Créteil sous le numéro 980 112 536, 
+                s'engage à protéger la confidentialité et la sécurité 
                 des informations personnelles de ses utilisateurs et stagiaires.
               </p>
               <p>
@@ -30,11 +30,12 @@ export default function PolitiqueConfidentialite() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">2. Responsable du traitement</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <p><strong>Responsable du traitement :</strong> ACCERTIF</p>
-                <p><strong>Adresse :</strong> 905 chemin de l'évêque, 82290 Montbeton, France</p>
-                <p><strong>Email :</strong> contact@accertif.fr</p>
-                <p><strong>Téléphone :</strong> 09 75 85 65 10</p>
-                <p><strong>SIRET :</strong> 91819995100016</p>
+                <p><strong>Responsable du traitement :</strong> Lenouvion Consulting</p>
+                <p><strong>Contact :</strong> Jacques-Henri MARIN</p>
+                <p><strong>Email :</strong> jacqueshenri.marin@lenouvion-consulting.fr</p>
+                <p><strong>Téléphone :</strong> 07 78 25 10 94</p>
+                <p><strong>SIREN :</strong> 980 112 536</p>
+                <p><strong>SIRET :</strong> 980 112 536 00019</p>
               </div>
             </section>
 
@@ -124,7 +125,7 @@ export default function PolitiqueConfidentialite() {
                 <li><strong>Droit de retrait du consentement :</strong> Retirer votre consentement à tout moment</li>
               </ul>
               <p className="mb-4">
-                Pour exercer ces droits, contactez-nous à : <a href="mailto:contact@accertif.fr" className="text-blue-600 hover:underline">contact@accertif.fr</a>
+                Pour exercer ces droits, contactez-nous à : <a href="mailto:jacqueshenri.marin@lenouvion-consulting.fr" className="text-brand hover:underline">jacqueshenri.marin@lenouvion-consulting.fr</a>
               </p>
               <p>
                 Vous avez également le droit d'introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) 
@@ -180,9 +181,10 @@ export default function PolitiqueConfidentialite() {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">13. Contact</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="mb-2">Pour toute question concernant cette politique de confidentialité :</p>
-                <p><strong>Email :</strong> <a href="mailto:contact@accertif.fr" className="text-blue-600 hover:underline">contact@accertif.fr</a></p>
-                <p><strong>Téléphone :</strong> 09 75 85 65 10</p>
-                <p><strong>Adresse :</strong> 905 chemin de l'évêque, 82290 Montbeton, France</p>
+                <p><strong>Email :</strong> <a href="mailto:jacqueshenri.marin@lenouvion-consulting.fr" className="text-brand hover:underline">jacqueshenri.marin@lenouvion-consulting.fr</a></p>
+                <p><strong>Téléphone :</strong> 07 78 25 10 94</p>
+                <p><strong>Contact :</strong> Jacques-Henri MARIN</p>
+                <p><strong>Adresse :</strong> 12 rue Chaigneau, 94210 Saint-Maur-des-Fossés</p>
               </div>
             </section>
 

@@ -160,11 +160,11 @@ const HomePage = () => {
               animate={controls}
               variants={titleVariants}
             >
-              Des compétences <span className="relative inline-block">
-                <span className="relative z-10">pratiques</span>
+              L'IA comme <span className="relative inline-block">
+                <span className="relative z-10">levier de leadership</span>
                 <span className="absolute bottom-1 left-0 w-full h-2 bg-white opacity-20 rounded animate-pulse"></span>
-              </span>, une Form'action <span className="relative inline-block">
-                <span className="relative z-10">sur-mesure</span>
+              </span>, pas un <span className="relative inline-block">
+                <span className="relative z-10">projet IT</span>
                 <span className="absolute bottom-1 left-0 w-full h-2 bg-white opacity-20 rounded animate-pulse"></span>
               </span>.
             </motion.h1>
@@ -175,7 +175,7 @@ const HomePage = () => {
               animate={controls}
               variants={subtitleVariants}
             >
-              Apprenez à votre rythme avec une Form'action individualisée, conçue pour une mise en pratique immédiate et 100 % finançable.
+              Vous voyez l'IA comme un levier stratégique, mais chaque consultant vous noie sous le jargon... et pendant ce temps, vos concurrents avancent.
             </motion.p>
             
             {/* Dynamic Stats */}
@@ -209,14 +209,14 @@ const HomePage = () => {
                 href="/formations" 
                 className="btn-primary btn-lg btn-with-icon"
               >
-                Découvrir nos Form'actions
+                Découvrir nos formations IA
               </Link>
               <a 
-                href="tel:0975856510"
+                href="tel:0778251094"
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-brand-700 font-medium py-3 px-6 rounded-md transition-colors inline-flex items-center justify-center"
               >
                 <Phone size={18} className="mr-2" />
-                09 75 85 65 10
+                07 78 25 10 94
               </a>
             </motion.div>
           </div>
@@ -227,9 +227,9 @@ const HomePage = () => {
       <section className="py-16 bg-gray-50" ref={whyChooseUsRef}>
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6">Pourquoi nous choisir ?</h2>
+            <h2 className="text-3xl font-bold mb-6">Pourquoi Me choisir ?</h2>
             <p className="text-gray-600 mb-8">
-              Un accompagnement expert, une formation sur-mesure, des compétences certifiées.
+              L'écart se creuse : en 2025, 73% des PME qui n'ont pas adopté l'IA perdent des parts de marché.
             </p>
           </div>
           
@@ -244,9 +244,9 @@ const HomePage = () => {
               <div className="bg-brand-100 p-3 rounded-full inline-flex justify-center items-center mb-4 transition-transform duration-300 hover:scale-110">
                 <Star className="text-brand" size={28} />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Un suivi personnalisé pour une montée en compétences efficace</h3>
+              <h3 className="text-xl font-semibold mb-3">Approche pragmatique sans jargon technique</h3>
               <p className="text-gray-600">
-                Nos experts métier vous accompagnent tout au long de votre parcours pour garantir l'acquisition de compétences immédiatement exploitables en situation réelle.
+                Je traduis la tech en résultats business avec une méthode structurée qui lie innovation technologique et transformation humaine.
               </p>
             </motion.div>
             
@@ -260,9 +260,9 @@ const HomePage = () => {
               <div className="bg-brand-100 p-3 rounded-full inline-flex justify-center items-center mb-4 transition-transform duration-300 hover:scale-110">
                 <Tool className="text-brand" size={28} />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Nos Form'actions vous permettent de construire un parcours sur mesure.</h3>
+              <h3 className="text-xl font-semibold mb-3">Résultats business mesurables dès le premier mois</h3>
               <p className="text-gray-600">
-              Vous choisissez le rythme, les modalités et les formats les plus adaptés pour atteindre vos objectifs professionnels tout en valorisant vos acquis.
+              30% de gains de productivité, cycles de vente accélérés, temps libéré pour vos équipes. ROI visible en 3 mois avec la Méthode VAI.
               </p>
             </motion.div>
             
@@ -276,9 +276,9 @@ const HomePage = () => {
               <div className="bg-brand-100 p-3 rounded-full inline-flex justify-center items-center mb-4 transition-transform duration-300 hover:scale-110">
                 <Wallet className="text-brand" size={28} />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Des formations conçues pour certifier vos compétences avec votre CPF</h3>
+              <h3 className="text-xl font-semibold mb-3">Triple compétence : pédagogie, expertise IA, management commercial</h3>
               <p className="text-gray-600">
-                Toutes nos formations certifient vos acquis et renforcent vos compétences. Elles sont donc 100 % finançables par votre CPF et tous les autres dispositifs de financement.
+                20 ans de direction commerciale + 6 ans d'IA + organisme certifié Qualiopi. Une expertise unique pour accompagner les PME de 50 à 500 salariés.
               </p>
             </motion.div>
           </div>
@@ -290,89 +290,31 @@ const HomePage = () => {
               className="btn-primary btn-lg btn-with-icon btn-rounded group"
             >
               <Search size={20} className="mr-2 group-hover:animate-pulse" />
-              <span>Découvrez nos form'actions et personnalisez votre parcours</span>
+              <span>Découvrez mes formations et personnalisez votre parcours</span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Form'actions Certifiantes */}
+      {/* formations Certifiantes */}
       <section className="py-16">
          <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold mb-6">Le top 3 de nos Form'actions</h2>
+            <h2 className="text-3xl font-bold mb-6">Le top 3 de mes formations</h2>
             <p className="text-gray-600 mb-8">
-              Atteignez vos objectifs avec nos Form'actions certifiantes, 100% opérationnelles et finançables !
+              Atteignez vos objectifs avec mes formations, 100% opérationnelles et finançables !
             </p>
           </div>
           
           {/* Featured Formations - Alignement parfait (hauteurs fixes) */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* Formation 1 */}
+            {/* Formation 1 - Vision IA */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] transform h-full flex flex-col">
               {/* Image on top - Fixed height */}
               <div className="h-48 overflow-hidden flex-shrink-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
-                  alt="Communication professionnelle" 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow min-h-0">
-                {/* Bloc titre+icône */}
-                <div className="flex items-start mb-4 h-[80px]">
-                  <div className="bg-brand-100 p-2 rounded-full mr-3 flex-shrink-0">
-                    <MessageSquare className="text-brand" size={20} />
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 leading-tight">Communiquer avec impact à l'oral en présentiel et à distance</h3>
-                </div>
-                {/* Espace obligatoire */}
-                <div className="mb-4"></div>
-                {/* Description */}
-                <div className="mb-5 h-[60px] flex items-center">
-                  <p className="text-sm sm:text-base text-gray-600 w-full overflow-hidden">
-                    Gagnez en aisance, maîtrisez votre stress et développez votre impact, que ce soit en présentiel ou à distance.
-                  </p>
-                </div>
-                {/* Infos */}
-                <div className="flex flex-wrap items-center justify-between mb-5 border-t border-b border-gray-100 py-3 h-[48px]">
-                  <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
-                    <Clock size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                    <span>21 heures</span>
-                  </div>
-                  <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
-                    <Tag size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                    <span>2450€</span>
-                  </div>
-                  <div className="flex items-center text-sm text-green-600 font-medium mr-3 mb-2">
-                    <CreditCard size={16} className="mr-2 text-green-600 flex-shrink-0" />
-                    <span>Éligible CPF</span>
-                  </div>
-                </div>
-                {/* Certification */}
-                <div className="flex items-center text-sm text-gray-600 mb-5 h-[28px]">
-                  <Award size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                  <span>Certifié par Pollen Conseil</span>
-                </div>
-                {/* Bouton */}
-                <div className="mt-auto flex-shrink-0">
-                  <Link 
-                    href="/formation/communication-prise-parole" 
-                    className="btn-primary btn-md btn-with-icon w-full"
-                  >
-                    Découvrir cette Form'actions <ArrowRight size={14} className="ml-2" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Formation 2 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] transform h-full flex flex-col">
-              {/* Image on top - Fixed height */}
-              <div className="h-48 overflow-hidden flex-shrink-0">
-                <img 
-                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
-                  alt="Intelligence Artificielle pour le marketing" 
+                  src="/ia.png" 
+                  alt="Vision IA : De la curiosité à la stratégie" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
@@ -382,55 +324,48 @@ const HomePage = () => {
                   <div className="bg-brand-100 p-2 rounded-full mr-3 flex-shrink-0">
                     <Zap className="text-brand" size={20} />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 leading-tight">Intégrer l'IA conversationnelle dans le cycle de vente</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 leading-tight">Vision IA : De la curiosité à la stratégie</h3>
                 </div>
                 {/* Espace obligatoire */}
                 <div className="mb-4"></div>
                 {/* Description */}
                 <div className="mb-5 h-[60px] flex items-center">
                   <p className="text-sm sm:text-base text-gray-600 w-full overflow-hidden">
-                    Automatisez vos processus, optimisez vos ventes et engagez mieux vos clients grâce à l'IA conversationnelle.
+                    Clarifiez votre vision IA et alignez-la avec votre stratégie d'entreprise. Cartographiez les enjeux sectoriels et identifiez les quick wins stratégiques.
                   </p>
                 </div>
                 {/* Infos */}
                 <div className="flex flex-wrap items-center justify-between mb-5 border-t border-b border-gray-100 py-3 h-[48px]">
                   <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
                     <Clock size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                    <span>21 heures</span>
+                    <span>7 heures</span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
                     <Tag size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                    <span>2450€</span>
-                  </div>
-                  <div className="flex items-center text-sm text-green-600 font-medium mr-3 mb-2">
-                    <CreditCard size={16} className="mr-2 text-green-600 flex-shrink-0" />
-                    <span>Éligible CPF</span>
+                    <span>1900€</span>
                   </div>
                 </div>
-                {/* Certification */}
-                <div className="flex items-center text-sm text-gray-600 mb-5 h-[28px]">
-                  <Award size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                  <span>Certifié par Online Sales Success</span>
-                </div>
+                {/* Certification - Pas d'affichage pour les formations non-certifiantes */}
+                <div className="mb-5 h-[28px]"></div>
                 {/* Bouton */}
                 <div className="mt-auto flex-shrink-0">
                   <Link 
-                    href="/formation/ia-vente" 
+                    href="/formation/vision-ia-strategie" 
                     className="btn-primary btn-md btn-with-icon w-full"
                   >
-                    Découvrir cette Form'action <ArrowRight size={14} className="ml-2" />
+                    Découvrir cette formation <ArrowRight size={14} className="ml-2" />
                   </Link>
                 </div>
               </div>
             </div>
 
-            {/* Formation 3 */}
+            {/* Formation 2 - Activation IA */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] transform h-full flex flex-col">
               {/* Image on top - Fixed height */}
               <div className="h-48 overflow-hidden flex-shrink-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" 
-                  alt="Stratégie digitale et réseaux sociaux" 
+                  src="/ia.png" 
+                  alt="Activation de l'IA : Passer de la vision à l'action" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
@@ -438,45 +373,89 @@ const HomePage = () => {
                 {/* Bloc titre+icône */}
                 <div className="flex items-start mb-4 h-[80px]">
                   <div className="bg-brand-100 p-2 rounded-full mr-3 flex-shrink-0">
-                    <BarChart3 className="text-brand" size={20} />
+                    <Zap className="text-brand" size={20} />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 leading-tight">Développer son activité avec le Webmarketing</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 leading-tight">Activation de l'IA : Passer de la vision à l'action</h3>
                 </div>
                 {/* Espace obligatoire */}
                 <div className="mb-4"></div>
                 {/* Description */}
                 <div className="mb-5 h-[60px] flex items-center">
                   <p className="text-sm sm:text-base text-gray-600 w-full overflow-hidden">
-                    Élaborez une stratégie digitale efficace et maîtrisez les leviers des réseaux sociaux pour votre présence en ligne.
+                    Initiez les premiers déploiements d'outils IA, réinventez des processus métier clés et formez vos équipes dirigeantes pour créer un réseau de champions IA.
                   </p>
                 </div>
                 {/* Infos */}
                 <div className="flex flex-wrap items-center justify-between mb-5 border-t border-b border-gray-100 py-3 h-[48px]">
                   <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
                     <Clock size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                    <span>21 heures</span>
+                    <span>14 heures</span>
                   </div>
                   <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
                     <Tag size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                    <span>2450€</span>
-                  </div>
-                  <div className="flex items-center text-sm text-green-600 font-medium mr-3 mb-2">
-                    <CreditCard size={16} className="mr-2 text-green-600 flex-shrink-0" />
-                    <span>Éligible CPF</span>
+                    <span>3600€</span>
                   </div>
                 </div>
-                {/* Certification */}
-                <div className="flex items-center text-sm text-gray-600 mb-5 h-[28px]">
-                  <Award size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                  <span>Certifié par Webmarketing & Com</span>
-                </div>
+                {/* Certification - Pas d'affichage pour les formations non-certifiantes */}
+                <div className="mb-5 h-[28px]"></div>
                 {/* Bouton */}
                 <div className="mt-auto flex-shrink-0">
                   <Link 
-                    href="/formation/community-management" 
+                    href="/formation/activation-ia-vision-action" 
                     className="btn-primary btn-md btn-with-icon w-full"
                   >
-                    Découvrir cette Form'action <ArrowRight size={14} className="ml-2" />
+                    Découvrir cette formation <ArrowRight size={14} className="ml-2" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Formation 3 - Innovation IA */}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] transform h-full flex flex-col">
+              {/* Image on top - Fixed height */}
+              <div className="h-48 overflow-hidden flex-shrink-0">
+                <img 
+                  src="/ia.png" 
+                  alt="Innovation Propulsée par l'IA : Créer de nouvelles offres et modèles" 
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-grow min-h-0">
+                {/* Bloc titre+icône */}
+                <div className="flex items-start mb-4 h-[80px]">
+                  <div className="bg-brand-100 p-2 rounded-full mr-3 flex-shrink-0">
+                    <Zap className="text-brand" size={20} />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800 leading-tight">Innovation Propulsée par l'IA : Créer de nouvelles offres et modèles</h3>
+                </div>
+                {/* Espace obligatoire */}
+                <div className="mb-4"></div>
+                {/* Description */}
+                <div className="mb-5 h-[60px] flex items-center">
+                  <p className="text-sm sm:text-base text-gray-600 w-full overflow-hidden">
+                    Explorer comment l'IA transforme la proposition de valeur client. Générer de nouvelles sources de revenus. Structurer un portefeuille de cas d'usage innovants.
+                  </p>
+                </div>
+                {/* Infos */}
+                <div className="flex flex-wrap items-center justify-between mb-5 border-t border-b border-gray-100 py-3 h-[48px]">
+                  <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
+                    <Clock size={16} className="mr-2 text-brand-600 flex-shrink-0" />
+                    <span>14 heures</span>
+                  </div>
+                  <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
+                    <Tag size={16} className="mr-2 text-brand-600 flex-shrink-0" />
+                    <span>3900€</span>
+                  </div>
+                </div>
+                {/* Certification - Pas d'affichage pour les formations non-certifiantes */}
+                <div className="mb-5 h-[28px]"></div>
+                {/* Bouton */}
+                <div className="mt-auto flex-shrink-0">
+                  <Link 
+                    href="/formation/innovation-ia-offres-modeles" 
+                    className="btn-primary btn-md btn-with-icon w-full"
+                  >
+                    Découvrir cette formation <ArrowRight size={14} className="ml-2" />
                   </Link>
                 </div>
               </div>
@@ -489,7 +468,7 @@ const HomePage = () => {
               className="btn-primary btn-lg btn-with-icon btn-rounded group"
             >
               <Search size={20} className="mr-2 group-hover:animate-pulse" />
-              <span>Toutes nos Form'action</span>
+              <span>Toutes mes formations</span>
             </Link>
           </div>
         </div>
@@ -519,7 +498,7 @@ const HomePage = () => {
                   custom={0}
                 >
                   <div className="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-left text-center md:text-left order-2 md:order-none">
-                    <h3 className="text-lg md:text-xl font-semibold mb-2">Choisissez votre Form'action</h3>
+                    <h3 className="text-lg md:text-xl font-semibold mb-2">Choisissez votre formation</h3>
                     <p className="text-sm md:text-base text-gray-600">
                       Parcourez notre catalogue et sélectionnez la formation adaptée à vos objectifs.
                     </p>
@@ -580,7 +559,7 @@ const HomePage = () => {
                     <div className="bg-brand text-white rounded-full w-12 h-12 md:w-10 md:h-10 flex items-center justify-center font-bold z-10 text-lg md:text-base">4</div>
                   </div>
                   <div className="md:w-1/2 md:pl-12 md:text-left text-center md:text-left">
-                    <h3 className="text-lg md:text-xl font-semibold mb-2">Accédez à SKILLUP by Accertif</h3>
+                    <h3 className="text-lg md:text-xl font-semibold mb-2">Accédez à votre plateforme de formation</h3>
                     <p className="text-sm md:text-base text-gray-600">
                       Accédez à une plateforme intuitive intégrant des classes virtuelles, des parcours personnalisés, des échanges collaboratifs et un suivi de progression détaillé. Alliez flexibilité et accompagnement expert pour un apprentissage efficace et interactif.
                     </p>
@@ -613,7 +592,7 @@ const HomePage = () => {
                 href="/demande-formation" 
                 className="btn-primary btn-md md:btn-lg"
               >
-                Je crée ma Form'action !
+                Je crée ma formation !
               </Link>
             </div>
           </div>
@@ -632,14 +611,14 @@ const HomePage = () => {
                   <MessageSquare size={20} />
                 </div>
                 <p className="italic text-gray-700">
-                  "Grâce à cette formation, j'ai enfin dépassé mon stress et découvert que l'aisance orale pouvait s'apprendre ! Lors de ma certification, j'ai pris la parole avec plaisir et confiance."
+                  "Je recommande vivement Jacques-Henri pour son approche structurée, sa vision business claire et sa capacité à relier la théorie à la pratique. Grâce à ses exercices et à l'expérimentation d'outils IA, il transforme l'apprentissage en une expérience immédiatement actionnable"
                 </p>
               </div>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
                 <div>
-                  <p className="font-medium">Marianne</p>
-                  <p className="text-sm text-gray-600">Assistante de direction</p>
+                  <p className="font-medium">Thomas Legrand</p>
+                  <p className="text-sm text-gray-600">AI & Data Product Builder @ Kaora Partners</p>
                 </div>
               </div>
             </div>
@@ -650,50 +629,32 @@ const HomePage = () => {
                   <MessageSquare size={20} />
                 </div>
                 <p className="italic text-gray-700">
-                  "Hyper complet, énormément de ressources, beaucoup de retours d'expériences ultra intéressants. Formateurs très talentueux et dynamiques."
+                  "Un super coup de boost reçu par Jacques Henri à travers une formation de qualité, qui nous a permis de nous acculturer avec l'IA, comprendre l'importance de son utilisation, et de prendre en main assez rapidement les différents outils à disposition. Depuis on a développé notre propre IA en interne et on se s'en sépare plus ! Je recommande vivement !"
                 </p>
               </div>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
                 <div>
-                  <p className="font-medium">Arthur</p>
-                  <p className="text-sm text-gray-600">Entrepreneur digital</p>
+                  <p className="font-medium">Heba Makhoul</p>
+                  <p className="text-sm text-gray-600">co CEO de Kaora Partners (ESN 120 collaborateurs)</p>
                 </div>
               </div>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100 h-full flex flex-col">
+            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100 h-full flex flex-col md:col-span-2">
               <div className="flex items-start mb-4">
                 <div className="bg-brand-100 text-brand p-2 rounded-full mr-4">
                   <MessageSquare size={20} />
                 </div>
                 <p className="italic text-gray-700">
-                  "Cette formation est une pépite pour mieux comprendre l'univers du financement de la formation en France. Tellement pépite, qu'elle devrait rester confidentielle... seulement pour quelques heureux élus !"
+                  "J'ai eu la chance de bénéficier de l'accompagnement de Jacques-Henri Marin de Lenouvion Consulting lors du lancement de ma société, OKKO Consulting, et je peux témoigner de la valeur remarquable de son approche. Ce qui distingue Jacques-Henri, c'est sa capacité à démystifier l'IA et à la rendre accessible aux TPE/PME. Son approche est résolument pédagogique et pragmatique : chaque conseil est immédiatement applicable, expliqué simplement et adapté à la réalité des petites structures comme la mienne. Grâce à son accompagnement, j'ai pu intégrer l'IA de manière efficace dans le développement de mon activité. Il m'a donné les clés concrètes pour utiliser ces outils intelligemment et en tirer un véritable avantage concurrentiel. Pour tout dirigeant de TPE/PME cherchant à transformer l'IA en atout stratégique, je recommande vivement Jacques-Henri Marin et Lenouvion Consulting. Son expertise et sa méthode font clairement la différence !"
                 </p>
               </div>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
                 <div>
-                  <p className="font-medium">Benjamin</p>
-                  <p className="text-sm text-gray-600">Formateur en management</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100 h-full flex flex-col">
-              <div className="flex items-start mb-4">
-                <div className="bg-brand-100 text-brand p-2 rounded-full mr-4">
-                  <MessageSquare size={20} />
-                </div>
-                <p className="italic text-gray-700">
-                  "Le format demi-journée permet de garder un bon rythme de concentration tout en assimilant toutes les informations. L'expérience et l'expertise du formateur sont riches et permettent d'illustrer chaque concept de manière claire et engageante."
-                </p>
-              </div>
-              <div className="flex items-center">
-                <div className="w-10 h-10 bg-gray-200 rounded-full mr-3"></div>
-                <div>
-                  <p className="font-medium">Virginie</p>
-                  <p className="text-sm text-gray-600">Consultante</p>
+                  <p className="font-medium">Corinne Leber</p>
+                  <p className="text-sm text-gray-600">Fondatrice OKKO Consulting</p>
                 </div>
               </div>
             </div>
@@ -726,7 +687,7 @@ const HomePage = () => {
               href="/contact" 
               className="btn-primary btn-lg"
             >
-              Je contacte mon conseiller
+              Me contacter
             </Link>
           </div>
         </div>

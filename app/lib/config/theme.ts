@@ -2,8 +2,8 @@ import { ThemeConfig } from './types';
 
 const themeConfig: ThemeConfig = {
   brand: {
-    primaryColor: '#5fb5c2', // Couleur principale Formapro
-    secondaryColor: '#5fb5c2'
+    primaryColor: '#eb5e2d', // Couleur principale Lenouvion Consulting
+    secondaryColor: '#eb5e2d'
   }
 };
 

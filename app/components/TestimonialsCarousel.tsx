@@ -6,21 +6,21 @@ import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
 const testimonials = [
   {
-    text: "L'IA a transformé ma façon de prospecter. J'ai vu mes résultats s'améliorer dès le premier mois d'utilisation. Une formation qui change vraiment la donne !",
-    author: "Thomas D.",
-    role: "Directeur Commercial",
+    text: "Je recommande vivement Jacques-Henri pour son approche structurée, sa vision business claire et sa capacité à relier la théorie à la pratique. Grâce à ses exercices et à l'expérimentation d'outils IA, il transforme l'apprentissage en une expérience immédiatement actionnable",
+    author: "Thomas Legrand",
+    role: "AI & Data Product Builder @ Kaora Partners",
     rating: 5
   },
   {
-    text: "Formation concrète avec des outils directement applicables. J'ai pu automatiser 40% de mes tâches commerciales et me concentrer sur l'essentiel.",
-    author: "Marie L.",
-    role: "Entrepreneure",
+    text: "Un super coup de boost reçu par Jacques Henri à travers une formation de qualité, qui nous a permis de nous acculturer avec l'IA, comprendre l'importance de son utilisation, et de prendre en main assez rapidement les différents outils à disposition. Depuis on a développé notre propre IA en interne et on se s'en sépare plus ! Je recommande vivement !",
+    author: "Heba Makhoul",
+    role: "co CEO de Kaora Partners (ESN 120 collaborateurs)",
     rating: 5
   },
   {
-    text: "Un accompagnement expert et personnalisé qui m'a permis de maîtriser l'IA pour mes ventes. +30% de leads qualifiés en seulement quelques semaines !",
-    author: "Pierre M.",
-    role: "Commercial",
+    text: "J'ai eu la chance de bénéficier de l'accompagnement de Jacques-Henri Marin de Lenouvion Consulting lors du lancement de ma société, OKKO Consulting, et je peux témoigner de la valeur remarquable de son approche. Ce qui distingue Jacques-Henri, c'est sa capacité à démystifier l'IA et à la rendre accessible aux TPE/PME. Son approche est résolument pédagogique et pragmatique : chaque conseil est immédiatement applicable, expliqué simplement et adapté à la réalité des petites structures comme la mienne.",
+    author: "Corinne Leber",
+    role: "Fondatrice OKKO Consulting",
     rating: 5
   }
 ];

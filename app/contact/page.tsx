@@ -99,7 +99,7 @@ EMAIL: ${formData.email}
 TELEPHONE: ${formData.phone}
 SUJET: ${formData.subject}
 MESSAGE: ${formData.message}`;
-    const result = await sendEmail({ to: 'hello@formaprobyaccertif.fr', subject: formData.subject, text: data });
+    const result = await sendEmail({ to: 'jacqueshenri.marin@lenouvion-consulting.fr', subject: formData.subject, text: data });
     
     // Redirection vers la page de remerciement après envoi réussi
     window.location.href = '/merci';
@@ -128,7 +128,7 @@ MESSAGE: ${formData.message}`;
                     <MapPin size={20} className="mr-4 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-1">Adresse</h3>
-                      <p>905 Chemin de l'Évêque, 82290 Montbeton, France</p>
+                      <p>12 rue Chaigneau, 94210 Saint-Maur-des-Fossés</p>
                     </div>
                   </div>
 
@@ -136,7 +136,7 @@ MESSAGE: ${formData.message}`;
                     <Phone size={20} className="mr-4 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-1">Téléphone</h3>
-                      <p>09 75 85 65 10</p>
+                      <p>07 78 25 10 94</p>
                     </div>
                   </div>
 
@@ -144,7 +144,7 @@ MESSAGE: ${formData.message}`;
                     <Mail size={20} className="mr-4 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-medium mb-1">Email</h3>
-                      <p>hello@formaprobyaccertif.fr</p>
+                      <p>jacqueshenri.marin@lenouvion-consulting.fr</p>
                     </div>
                   </div>
 
@@ -160,7 +160,7 @@ MESSAGE: ${formData.message}`;
                 <div className="mt-12">
                   <h3 className="font-medium mb-4">Suivez-nous</h3>
                   <div className="flex space-x-4">
-                    <a href="https://www.linkedin.com/company/93788178" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/lenouvion-consulting" target="_blank" rel="noopener noreferrer">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75 1.75.783 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.338-.025-3.063-1.868-3.063-1.868 0-2.155 1.459-2.155 2.965v5.702h-3v-10h2.877v1.366h.041c.4-.758 1.376-1.558 2.832-1.558 3.028 0 3.592 1.993 3.592 4.584v5.608z"/>
     </svg>
@@ -288,9 +288,9 @@ MESSAGE: ${formData.message}`;
                         >
                           <option value="">Sélectionnez un sujet</option>
                           <option value="information">Je souhaite plus d'informations</option>
-                          <option value="inscription">M'inscrire à une Form'action</option>
-                          <option value="financement">Financer une Form'action</option>
-                          <option value="surmesure">Personnaliser ma Form'action</option>                          
+                          <option value="inscription">M'inscrire à une formation</option>
+                          <option value="financement">Financer une formation</option>
+                          <option value="surmesure">Personnaliser ma formation</option>                          
                           <option value="partenariat">Proposition de partenariat</option>
                           <option value="autre">Autre</option>
                         </select>
@@ -324,13 +324,11 @@ MESSAGE: ${formData.message}`;
                       </button>
 
                       <a
-                        href="https://calendly.com/julien-gautier-accertif/formaprobyaccertif"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="mailto:jacqueshenri.marin@lenouvion-consulting.fr"
                         className="text-brand hover:text-brand-700 font-medium inline-flex items-center"
                       >
-                        <Calendar size={18} className="mr-2" />
-                        Prendre rendez-vous
+                        <Mail size={18} className="mr-2" />
+                        Nous contacter
                       </a>
                     </div>
                   </form>
@@ -354,7 +352,7 @@ MESSAGE: ${formData.message}`;
             </div>
 
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-semibold mb-2">Combien de temps dure une Form'action certifiante ?</h3>
+              <h3 className="text-lg font-semibold mb-2">Combien de temps dure une formation certifiante ?</h3>
               <p className="text-gray-600">
                 La durée varie selon les formations, généralement entre 14 et 60 heures. Chaque parcours est adapté à vos disponibilités et peut être réalisé à votre rythme grâce à notre plateforme e-learning.
               </p>
@@ -363,7 +361,7 @@ MESSAGE: ${formData.message}`;
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="text-lg font-semibold mb-2">Les formations sont-elles accessibles à distance ?</h3>
               <p className="text-gray-600">
-                Oui, toutes nos formations sont accessibles à distance via notre plateforme SKILLUP by Accertif. Vous bénéficiez également d'un accompagnement individualisé par visioconférence avec nos experts métier.
+                Oui, toutes nos formations sont accessibles à distance via notre plateforme de formation. Vous bénéficiez également d'un accompagnement individualisé par visioconférence avec nos experts métier.
               </p>
             </div>
           </div>

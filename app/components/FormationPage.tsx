@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { Clock, Award, Users, CheckCircle, ArrowRight, Calendar, Phone, X, Tag, MessageSquare, Target, Brain, Star, Globe, BookOpen, Laptop, Shield, DollarSign, FileCheck } from 'lucide-react';
 import formationsConfig from '../lib/config/formations';
 import themeConfig from '../lib/config/theme';
+import { Formation } from '../lib/config/types';
 import Link from 'next/link';
 import ContactForm from './ContactForm';
 
@@ -37,46 +38,12 @@ const FormationPage = () => {
   const [selectedModality, setSelectedModality] = useState<'individuel' | 'collectif'>('individuel');
   const [isCallbackOpen, setIsCallbackOpen] = useState(false);
 
-  // Fonction pour formater les informations de certification
-  const formatCertification = (formation: any) => {
-    // Priorité au champ formationType (pour l'API future)
-    if (formation?.formationType) {
-      switch (formation.formationType) {
-        case 'non-certifiante':
-          return 'Formation non-certifiante';
-        case 'partenariat':
-          if (formation.certificationDetails?.partenaire) {
-            return `En partenariat avec ${formation.certificationDetails.partenaire}`;
-          }
-          break;
-        case 'certifiante':
-          if (formation.certificationDetails?.organization) {
-            return `Certifié par ${formation.certificationDetails.organization}`;
-          }
-          break;
-      }
-    }
-    
-    // Fallback sur la logique Zuma (compatibilité)
-    if (!formation?.cpfEligible && !formation?.certificationDetails) {
-      return 'Formation non-certifiante';
-    }
-    
-    // Gestion des formations certifiantes et en partenariat
-    if (!formation?.certificationDetails) return null;
-    
-    const { name, code, organization, partenaire } = formation.certificationDetails;
-    if (!name || !code || !organization) return null;
-    
-    // Si la formation a un code de certification
-    if (code) {
-      // Pour les formations avec partenaire, afficher "En partenariat avec [partenaire]"
-      // Sinon, afficher "Certifié par" + nom du certificateur
-      return partenaire ? `En partenariat avec ${partenaire}` : `Certifié par ${organization}`;
-    }
-    
-    // Si pas de code, ne rien afficher
-    return null;
+  // Fonction pour formater les informations de certification - Logique Zuma exacte
+  const formatCertification = (formation: Formation) => {
+    // Logique Zuma exacte (identique à app/formations/page.tsx ligne 80-82)
+    return formation.certificationDetails ? 
+      (formation.certificationDetails.partenaire ? `En partenariat avec ${formation.certificationDetails.partenaire}` : 
+       formation.certificationDetails.code ? `Certifié par ${formation.certificationDetails.organization}` : "") : "";
   };
 
   // Trouver la formation correspondante
@@ -127,11 +94,11 @@ const FormationPage = () => {
                 Demander plus d'informations
               </button>
               <a 
-                href="tel:0975856510"
+                href="tel:0778251094"
                 className="bg-brand text-white hover:bg-brand-600 font-medium py-3 px-6 rounded-md transition-colors inline-flex items-center justify-center"
               >
                 <Phone size={18} className="mr-2" />
-                09 75 85 65 10
+                07 78 25 10 94
               </a>
             </div>
           </div>
@@ -206,7 +173,9 @@ const FormationPage = () => {
                         </span>
                       )}
                     </div>
-                    <p className="text-sm text-gray-600 mb-4">*Prix pour une formation en blended learning avec 20% d'e-learning et 80% de formation live</p>
+                    {formation.formationType !== 'non-certifiante' && (
+                      <p className="text-sm text-gray-600 mb-4">*Prix pour une formation en blended learning avec 20% d'e-learning et 80% de formation live</p>
+                    )}
                    
                     {formation.dates && formation.dates[selectedModality] && (
                       <div className="mt-4">
@@ -389,8 +358,38 @@ const FormationPage = () => {
             </section>
           )}
 
-          {/* Certification - Toutes les formations certifiantes */}
-          {formation.cpfEligible && formation.certificationDetails?.code && (
+          {/* Partenariat - Seulement pour les formations en partenariat */}
+          {formation.formationType === 'partenariat' && formation.certificationDetails && formation.certificationDetails.partenaire && (
+            <section className="mb-12">
+              <div className="bg-white rounded-lg shadow-md p-12 text-center">
+                <h2 className="text-2xl font-bold mb-8 text-center">Formation en partenariat avec :</h2>
+                
+                {formation.certificationDetails.partenaireLogo && (
+                  <div className="mb-8 flex justify-center">
+                    <img 
+                      src={formation.certificationDetails.partenaireLogo} 
+                      alt={`Logo ${formation.certificationDetails.partenaire}`}
+                      className="h-20 w-auto"
+                    />
+                  </div>
+                )}
+                
+                <div className="text-center">
+                  <a 
+                    href={formation.certificationDetails.partenaireUrl || '#'} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-black underline hover:no-underline focus:no-underline active:no-underline text-lg"
+                  >
+                    Découvrir notre partenaire
+                  </a>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* Certification - Seulement pour les formations certifiantes */}
+          {formation.formationType === 'certifiante' && formation.certificationDetails && formation.certificationDetails.code && (
             <section className="mb-12">
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold mb-6">Certification</h2>
@@ -435,8 +434,8 @@ const FormationPage = () => {
             </section>
           )}
 
-          {/* Processus de candidature */}
-          {formation.cpfEligible && formation.certificationDetails?.code && (
+          {/* Processus de candidature - Seulement pour les formations certifiantes */}
+          {formation.formationType === 'certifiante' && formation.certificationDetails && formation.certificationDetails.code && (
             <section className="mb-12">
               <div className="bg-white rounded-lg shadow-md p-8">
                 <div className="flex items-center mb-6">
@@ -499,8 +498,8 @@ const FormationPage = () => {
             </section>
           )}
 
-          {/* Accessibilité - Formations non certifiantes */}
-          {!formation.cpfEligible && hasAccessibility && formation.accessibility && (
+          {/* Accessibilité - Formations en partenariat */}
+          {formation.formationType === 'partenariat' && hasAccessibility && formation.accessibility && (
             <section className="mb-12">
               <div 
                 className="p-6 rounded-lg text-white"
@@ -513,10 +512,58 @@ const FormationPage = () => {
                     <Users className="text-white" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold mb-3 text-lg text-white">Accessibilité</h3>
-                    <p className="text-white text-opacity-90 mb-4">
-                      Cette formation est accessible à tous. Des adaptations peuvent être proposées selon les besoins spécifiques des participants.
-                    </p>
+                    <h3 className="font-semibold mb-3 text-lg text-white">Accessibilité de la formation</h3>
+                    {formation.accessibility && formation.accessibility.map((item, index) => {
+                      if (index === 0) {
+                        return (
+                          <p key={index} className="text-white text-opacity-90 mb-4">{item}</p>
+                        );
+                      } else if (index === 1) {
+                        return (
+                          <h4 key={index} className="font-semibold mb-2 text-white">{item}</h4>
+                        );
+                      } else {
+                        return (
+                          <p key={index} className="text-white text-opacity-90 mb-4">{item}</p>
+                        );
+                      }
+                    })}
+                  </div>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* Accessibilité - Formations non certifiantes */}
+          {formation.formationType === 'non-certifiante' && hasAccessibility && formation.accessibility && (
+            <section className="mb-12">
+              <div 
+                className="p-6 rounded-lg text-white"
+                style={{
+                  background: `linear-gradient(to right, ${themeConfig.brand.primaryColor}, ${themeConfig.brand.primaryColor}dd)`
+                }}
+              >
+                <div className="flex items-start">
+                  <div className="bg-white bg-opacity-20 p-3 rounded-full mr-4 flex-shrink-0">
+                    <Users className="text-white" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-semibold mb-3 text-lg text-white">Accessibilité de la formation</h3>
+                    {formation.accessibility && formation.accessibility.map((item, index) => {
+                      if (index === 0) {
+                        return (
+                          <p key={index} className="text-white text-opacity-90 mb-4">{item}</p>
+                        );
+                      } else if (index === 1) {
+                        return (
+                          <h4 key={index} className="font-semibold mb-2 text-white">{item}</h4>
+                        );
+                      } else {
+                        return (
+                          <p key={index} className="text-white text-opacity-90 mb-4">{item}</p>
+                        );
+                      }
+                    })}
                   </div>
                 </div>
               </div>
@@ -538,11 +585,11 @@ const FormationPage = () => {
                 Je lance mon parcours
               </button>
               <a
-                href="tel:0975856510"
+                href="tel:0778251094"
                 className="bg-brand text-white font-medium py-3 px-6 rounded-md hover:bg-brand-600 transition-colors inline-flex items-center justify-center"
               >
                 <Phone size={18} className="mr-2" />
-                09 75 85 65 10
+                07 78 25 10 94
               </a>
             </div>
           </section>
@@ -558,7 +605,7 @@ const FormationPage = () => {
       />
 
       <Head>
-        <title>{formation?.title} | FORMAPRO by ACCERTIF</title>
+        <title>{formation?.title} | Lenouvion Consulting</title>
         <meta name="description" content={formation?.fullDescription} />
       </Head>
     </div>
