@@ -18,7 +18,7 @@ export const formationData = {
     fullDescription: 'Formation professionnelle en Intelligence Artificielle appliquée à la vente en partenariat avec Formapro by Accertif. Optimisez votre processus commercial et augmentez vos performances. Formation éligible CPF.',
     keywords: ['IA vente', 'formation IA', 'intelligence artificielle', 'automatisation commerciale', 'processus de vente', 'Formapro by Accertif'],
     duration: '14 heures',
-    price: '1950€',
+    price: '2450€',
     skills: ['IA conversationnelle', 'Automatisation commerciale', 'Analyse prédictive', 'Outils IA avancés'],
     image: '/ia.png',
     certification: 'En partenariat avec Formapro by Accertif'

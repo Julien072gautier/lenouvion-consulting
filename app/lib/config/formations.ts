@@ -383,8 +383,8 @@ const formationsConfig = {
       formateur: '',
       formationType: 'partenariat',
       prices: {
-        individuel: { price: '1 950€*', label: 'Éligible CPF' },
-        collectif: { price: '1 250€*', label: 'Éligible CPF' }
+        individuel: { price: '2 450€*', label: 'Éligible CPF' },
+        collectif: { price: '1 650€*', label: 'Éligible CPF' }
       },
       dates: {
         collectif: [],
