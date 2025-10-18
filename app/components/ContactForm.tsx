@@ -115,7 +115,7 @@ DATE_ENVOI: ${new Date().toLocaleDateString('fr-FR', {
       : `Demande d'information - Formation ${formationName}`;
       
     const result = await sendEmail({
-      to: 'jacqueshenri.marin@lenouvion-consulting.fr',
+      to: 'contact@accertif.fr',
       subject: subject,
       text: data
     });
