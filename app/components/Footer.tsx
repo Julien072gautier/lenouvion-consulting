@@ -61,7 +61,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/formations" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Nos Formations
+                  Mes Formations
                 </Link>
               </li>
               <li>
@@ -87,18 +87,23 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Formations Populaires</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/formation/ia-vente" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  IA et Vente
+                <Link href="/formation/formation-vision-ia-strategie" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  Vision IA : De la curiosité à la stratégie
                 </Link>
               </li>
               <li>
-                <Link href="/formation/communication-prise-parole" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Communication et Prise de Parole
+                <Link href="/formation/formation-activation-ia-vision-action" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  Activation de l'IA : Passer de la vision à l'action
                 </Link>
               </li>
               <li>
-                <Link href="/formation/community-management" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Community Management
+                <Link href="/formation/formation-innovation-ia-offres-modeles" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  Innovation Propulsée par l'IA
+                </Link>
+              </li>
+              <li>
+                <Link href="/formation/formation-ia-vente" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  Intégrer l'IA conversationnelle dans le cycle de vente
                 </Link>
               </li>
             </ul>
