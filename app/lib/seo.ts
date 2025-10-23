@@ -12,13 +12,24 @@ interface SEOData {
 
 // Données des formations pour le SEO
 export const formationData = {
+  'acculturation-flash-ia': {
+    name: 'Acculturation Flash: Comprendre l\'IA et ses impacts',
+    shortDescription: 'Démystifier l\'IA (générative, agentique, automatisation) et montrer son potentiel concret pour les PME.',
+    fullDescription: 'Formation d\'acculturation rapide de 3 heures pour démystifier l\'IA et comprendre son potentiel concret pour les PME. Décryptage des opportunités et menaces, témoignages concrets et atelier interactif pour identifier votre premier cas d\'usage IA. Prix : 900€ individuel, 180€ collectif.',
+    keywords: ['acculturation IA', 'formation IA PME', 'démystifier IA', 'comprendre IA', 'cas d\'usage IA', 'formation courte IA'],
+    duration: '3 heures',
+    price: '900€',
+    skills: ['Panorama des technologies IA', 'Décryptage opportunités/menaces', 'Témoignages PME & ETI', 'Atelier interactif'],
+    image: '/acculturation.png',
+    certification: 'Formation non-certifiante'
+  },
   'ia-vente': {
     name: 'IA et Vente',
     shortDescription: 'Maîtrisez l\'utilisation de l\'IA pour optimiser votre processus commercial et augmenter vos performances de vente.',
     fullDescription: 'Formation professionnelle en Intelligence Artificielle appliquée à la vente en partenariat avec Formapro by Accertif. Optimisez votre processus commercial et augmentez vos performances. Formation éligible CPF.',
     keywords: ['IA vente', 'formation IA', 'intelligence artificielle', 'automatisation commerciale', 'processus de vente', 'Formapro by Accertif'],
     duration: '14 heures',
-    price: '2450€',
+    price: '2 450€',
     skills: ['IA conversationnelle', 'Automatisation commerciale', 'Analyse prédictive', 'Outils IA avancés'],
     image: '/ia.png',
     certification: 'En partenariat avec Formapro by Accertif'
@@ -29,9 +40,9 @@ export const formationData = {
     fullDescription: 'Atelier stratégique en présentiel pour dirigeants souhaitant clarifier leur vision IA et l\'aligner avec leur stratégie d\'entreprise. Cartographie des enjeux sectoriels, définition de la vision IA et identification des priorités stratégiques.',
     keywords: ['vision IA', 'stratégie IA', 'atelier dirigeants', 'quick wins IA', 'transformation digitale dirigeants'],
     duration: '7 heures',
-    price: '1900€',
+    price: '1 900€',
     skills: ['Cartographie des enjeux sectoriels', 'Définition de la vision IA', 'Identification des priorités stratégiques', 'Construction du discours dirigeant'],
-    image: '/ia.png',
+    image: '/vision.png',
     certification: 'Formation non-certifiante'
   },
   'activation-ia-vision-action': {
@@ -40,9 +51,9 @@ export const formationData = {
     fullDescription: 'Atelier pratique de 2 jours pour initier les premiers déploiements d\'outils IA générative, réinventer des processus métier clés avec l\'IA, former les équipes dirigeantes et créer un réseau de champions IA avec un plan de montée en compétences.',
     keywords: ['activation IA', 'déploiement IA', 'processus métier IA', 'champions IA', 'transformation IA dirigeants', 'outils IA générative'],
     duration: '14 heures',
-    price: '3600€',
+    price: '3 600€',
     skills: ['Déploiement d\'outils IA générative', 'Réinvention de processus métier', 'Formation des équipes dirigeantes', 'Création du réseau de champions IA'],
-    image: '/ia.png',
+    image: '/activation.png',
     certification: 'Formation non-certifiante'
   },
   'innovation-ia-offres-modeles': {
@@ -51,9 +62,9 @@ export const formationData = {
     fullDescription: 'Atelier Design Thinking IA pour créer de nouveaux services et produits. Explorez comment l\'IA transforme la proposition de valeur client, générez de nouvelles sources de revenus, structurez un portefeuille de cas d\'usage innovants et introduisez la gouvernance IA responsable.',
     keywords: ['innovation IA', 'design thinking IA', 'nouvelles offres IA', 'gouvernance IA', 'cas d\'usage IA', 'business model IA'],
     duration: '14 heures',
-    price: '3900€',
+    price: '3 900€',
     skills: ['Atelier Design Thinking IA', 'Études de cas sectoriels', 'Structuration du portefeuille de cas d\'usage', 'Gouvernance IA responsable'],
-    image: '/ia.png',
+    image: '/innovation.png',
     certification: 'Formation non-certifiante'
   }
 }
@@ -93,7 +104,7 @@ export function generateFormationSEO(formationSlug: string): SEOData {
       "provider": {
         "@type": "EducationalOrganization",
         "name": "Lenouvion Consulting",
-        "url": "https://www.lenouvion-consulting.fr"
+        "url": "https://test-accertif.lenouvion-consulting.fr"
       },
       "hasCourseInstance": {
         "@type": "CourseInstance",
@@ -109,12 +120,12 @@ export function generateFormationSEO(formationSlug: string): SEOData {
         "price": formation.price,
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "url": `https://www.lenouvion-consulting.fr/formation/${formationSlug}`
+        "url": `https://test-accertif.lenouvion-consulting.fr/formation/${formationSlug}`
       },
       "educationalCredentialAwarded": formation.certification,
       "teaches": formation.skills,
       "image": formation.image,
-      "url": `https://www.lenouvion-consulting.fr/formation/${formationSlug}`
+      "url": `https://test-accertif.lenouvion-consulting.fr/formation/${formationSlug}`
     }
   }
 }
@@ -122,24 +133,24 @@ export function generateFormationSEO(formationSlug: string): SEOData {
 export function generatePageSEO(pageType: string, customData?: any): SEOData {
   const baseSEO = {
     website: {
-      title: 'Lenouvion Consulting - Formation Professionnelle de Qualité | Certifiée Qualiopi',
-      description: 'Lenouvion Consulting propose des formations professionnelles certifiées Qualiopi en IA, communication et community management. Formations éligibles CPF avec un accompagnement personnalisé.',
-      keywords: ['formation professionnelle', 'CPF', 'Qualiopi', 'intelligence artificielle', 'communication', 'community management']
+      title: 'Lenouvion Consulting - Formations IA pour Dirigeants | Certifiées Qualiopi',
+      description: 'Lenouvion Consulting propose des formations professionnelles en Intelligence Artificielle pour dirigeants PME/ETI. Acculturation, vision stratégique, activation et innovation IA. Formations éligibles CPF.',
+      keywords: ['formation IA dirigeants', 'intelligence artificielle PME', 'acculturation IA', 'stratégie IA', 'activation IA', 'innovation IA', 'CPF', 'Qualiopi']
     },
     formations: {
-      title: 'Toutes nos Formations Professionnelles | Lenouvion Consulting',
-      description: 'Découvrez toutes nos formations professionnelles certifiées Qualiopi : IA et vente, communication, community management. Éligibles CPF.',
-      keywords: ['formations professionnelles', 'liste formations', 'catalogue formation', 'CPF', 'Qualiopi']
+      title: 'Formations IA pour Dirigeants | Lenouvion Consulting',
+      description: 'Découvrez nos formations en Intelligence Artificielle pour dirigeants : acculturation flash, vision stratégique, activation et innovation IA. Formations éligibles CPF.',
+      keywords: ['formations IA dirigeants', 'catalogue formations IA', 'acculturation IA', 'vision IA', 'activation IA', 'innovation IA', 'CPF', 'Qualiopi']
     },
     contact: {
       title: 'Contactez-nous | Lenouvion Consulting',
-      description: 'Contactez Lenouvion Consulting pour plus d\'informations sur nos formations professionnelles. Notre équipe vous accompagne dans votre projet de formation.',
-      keywords: ['contact FormaPro', 'information formation', 'conseiller formation', 'accompagnement']
+      description: 'Contactez Lenouvion Consulting pour plus d\'informations sur nos formations IA pour dirigeants. Notre équipe vous accompagne dans votre projet de transformation IA.',
+      keywords: ['contact Lenouvion Consulting', 'information formation IA', 'conseiller formation IA', 'accompagnement dirigeants']
     },
     about: {
-      title: 'À Propos de Lenouvion Consulting | Organisme de Formation Certifié',
-      description: 'Lenouvion Consulting est un organisme de formation certifié Qualiopi. Découvrez notre histoire, nos valeurs et notre engagement qualité.',
-      keywords: ['Lenouvion Consulting', 'organisme formation', 'Qualiopi', 'à propos', 'certification qualité']
+      title: 'À Propos de Lenouvion Consulting | Expert IA pour Dirigeants',
+      description: 'Lenouvion Consulting est un organisme de formation certifié Qualiopi spécialisé dans l\'accompagnement des dirigeants PME/ETI dans leur transformation IA. Découvrez notre expertise et notre approche.',
+      keywords: ['Lenouvion Consulting', 'expert IA dirigeants', 'transformation IA PME', 'Qualiopi', 'à propos', 'Jacques-Henri Marin']
     }
   }
 
@@ -154,7 +165,7 @@ export function generateBreadcrumbStructuredData(breadcrumbs: Array<{name: strin
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://www.lenouvion-consulting.fr${item.url}`
+      "item": `https://test-accertif.lenouvion-consulting.fr${item.url}`
     }))
   }
 }
@@ -174,7 +185,7 @@ export function generateAllFormationsMetadata() {
       openGraph: {
         title: seoData.title,
         description: seoData.description,
-        url: `https://www.lenouvion-consulting.fr/formation/${slug}`,
+        url: `https://test-accertif.lenouvion-consulting.fr/formation/${slug}`,
         type: 'article',
         images: [
           {
@@ -192,7 +203,7 @@ export function generateAllFormationsMetadata() {
         images: [seoData.ogImage || `/images/formations/${slug}-og.jpg`],
       },
       alternates: {
-        canonical: `https://www.lenouvion-consulting.fr/formation/${slug}`,
+        canonical: `https://test-accertif.lenouvion-consulting.fr/formation/${slug}`,
       },
     }
   })
@@ -212,7 +223,7 @@ export function getFormationMetadata(slug: string): Metadata {
     openGraph: {
       title: seoData.title,
       description: seoData.description,
-      url: `https://www.lenouvion-consulting.fr/formation/${slug}`,
+      url: `https://test-accertif.lenouvion-consulting.fr/formation/${slug}`,
       type: 'article',
       images: [
         {
@@ -230,7 +241,7 @@ export function getFormationMetadata(slug: string): Metadata {
       images: [seoData.ogImage || `/images/formations/${slug}-og.jpg`],
     },
     alternates: {
-      canonical: `https://www.lenouvion-consulting.fr/formation/${slug}`,
+      canonical: `https://test-accertif.lenouvion-consulting.fr/formation/${slug}`,
     },
   }
 }

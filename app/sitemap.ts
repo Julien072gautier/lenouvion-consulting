@@ -36,6 +36,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Pages de formation IA
     {
+      url: `${baseUrl}/formation/acculturation-flash-ia`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/formation/vision-ia-strategie`,
       lastModified: new Date(),
       changeFrequency: 'monthly',

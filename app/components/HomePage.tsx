@@ -313,7 +313,7 @@ const HomePage = () => {
               {/* Image on top - Fixed height */}
               <div className="h-48 overflow-hidden flex-shrink-0">
                 <img 
-                  src="/ia.png" 
+                  src="/vision.png" 
                   alt="Vision IA : De la curiosité à la stratégie" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
@@ -342,7 +342,7 @@ const HomePage = () => {
                   </div>
                   <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
                     <Tag size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                    <span>1900€</span>
+                    <span>1 900€</span>
                   </div>
                 </div>
                 {/* Certification - Pas d'affichage pour les formations non-certifiantes */}
@@ -364,7 +364,7 @@ const HomePage = () => {
               {/* Image on top - Fixed height */}
               <div className="h-48 overflow-hidden flex-shrink-0">
                 <img 
-                  src="/ia.png" 
+                  src="/activation.png" 
                   alt="Activation de l'IA : Passer de la vision à l'action" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
@@ -393,7 +393,7 @@ const HomePage = () => {
                   </div>
                   <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
                     <Tag size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                    <span>3600€</span>
+                    <span>3 600€</span>
                   </div>
                 </div>
                 {/* Certification - Pas d'affichage pour les formations non-certifiantes */}
@@ -415,7 +415,7 @@ const HomePage = () => {
               {/* Image on top - Fixed height */}
               <div className="h-48 overflow-hidden flex-shrink-0">
                 <img 
-                  src="/ia.png" 
+                  src="/innovation.png" 
                   alt="Innovation Propulsée par l'IA : Créer de nouvelles offres et modèles" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
@@ -444,7 +444,7 @@ const HomePage = () => {
                   </div>
                   <div className="flex items-center text-sm text-gray-600 mr-3 mb-2">
                     <Tag size={16} className="mr-2 text-brand-600 flex-shrink-0" />
-                    <span>3900€</span>
+                    <span>3 900€</span>
                   </div>
                 </div>
                 {/* Certification - Pas d'affichage pour les formations non-certifiantes */}

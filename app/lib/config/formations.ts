@@ -12,13 +12,133 @@ const formationsConfig = {
   
   formations: [
     {
+      id: 'acculturation-flash-ia',
+      title: 'Acculturation Flash: Comprendre l\'IA et ses impacts',
+      shortDescription: 'Démystifier l\'IA (générative, agentique, automatisation) et montrer son potentiel concret pour les PME.',
+      fullDescription: 'Démystifier l\'IA (générative, agentique, automatisation) et montrer son potentiel concret pour les PME. Décrypter les opportunités et menaces. Découvrir des cas d\'usage métiers concrets.',
+      slug: 'formation-acculturation-flash-ia',
+      category: 'Intelligence Artificielle',
+      image: '/acculturation.png',
+      duration: '3 heures',
+      formateur: '',
+      formationType: 'non-certifiante',
+      prices: {
+        individuel: { price: '900€', label: '' },
+        collectif: { price: '180€', label: '' }
+      },
+      dates: {
+        collectif: [],
+        individuel: []
+      },
+      cpfEligible: false,
+      features: [
+        'Panorama des technologies IA',
+        'Décryptage opportunités/menaces',
+        'Témoignages PME & ETI',
+        'Atelier interactif : premier cas d\'usage IA'
+      ],
+      objectives: [
+        "Compréhension claire de l'IA et de ses enjeux",
+        "Vision des opportunités sectorielles pour les PME",
+        "Identification rapide d'un premier cas d'usage IA",
+        "Démystification des technologies et de leur potentiel"
+      ],
+      program: [
+        {
+          title: "Module 1 : Panorama des technologies IA",
+          items: [
+            "Introduction à l'IA générative",
+            "Comprendre l'IA agentique",
+            "Automatisation et IA",
+            "Technologies émergentes"
+          ]
+        },
+        {
+          title: "Module 2 : Décryptage opportunités/menaces",
+          items: [
+            "Analyse des opportunités sectorielles",
+            "Identification des menaces concurrentielles",
+            "Impact sur les métiers et processus",
+            "Stratégies d'adaptation"
+          ]
+        },
+        {
+          title: "Module 3 : Témoignages PME & ETI",
+          items: [
+            "Retours d'expérience concrets",
+            "Cas d'usage réussis",
+            "Leçons apprises",
+            "Bonnes pratiques"
+          ]
+        },
+        {
+          title: "Module 4 : Atelier interactif",
+          items: [
+            "Premier cas d'usage IA en 15 min",
+            "Application pratique immédiate",
+            "Évaluation de maturité IA",
+            "Plan d'action personnalisé"
+          ]
+        }
+      ],
+      publicVise: [
+        "Dirigeants PME/ETI",
+        "COMEX et équipes dirigeantes",
+        "Managers et responsables opérationnels"
+      ],
+      prerequis: [
+        "Aucun prérequis technique",
+        "Intérêt pour l'intelligence artificielle",
+        "Expérience en management souhaitée"
+      ],
+      teachingMethods: [
+        "Conférence interactive",
+        "Atelier interactif",
+        "Support de présentation",
+        "Échanges et témoignages"
+      ],
+      evaluationMethods: [
+        "Grille d'évaluation de maturité IA",
+        "Participation active aux ateliers",
+        "Identification d'un cas d'usage concret"
+      ],
+      accessibility: [
+        "Formation accessible sous 15 jours après inscription.",
+        "Adaptation des conditions d'examen aux personnes en situation de handicap",
+        "Le référent handicap prendra en compte dès l'inscription du candidat sa situation de handicap, si celle-ci est mentionnée. Il sera alors proposé au candidat un entretien afin d'envisager avec lui les aménagements qui pourront être apportés."
+      ],
+      reasons: [
+        {
+          title: 'Compréhension immédiate',
+          description: 'Démystifiez l\'IA en 3 heures et comprenez son potentiel concret',
+          icon: 'Lightbulb'
+        },
+        {
+          title: 'Cas d\'usage identifiés',
+          description: 'Identifiez rapidement votre premier cas d\'usage IA applicable',
+          icon: 'Target'
+        },
+        {
+          title: 'Vision sectorielle',
+          description: 'Découvrez les opportunités spécifiques à votre secteur d\'activité',
+          icon: 'TrendingUp'
+        },
+        {
+          title: 'Retours d\'expérience',
+          description: 'Bénéficiez des témoignages concrets de PME et ETI',
+          icon: 'Users'
+        }
+      ],
+      icon: 'Brain'
+    },
+    {
       id: 'vision-ia-strategie',
       title: 'Vision IA : De la curiosité à la stratégie',
       shortDescription: 'Clarifiez votre vision IA et alignez-la avec votre stratégie d\'entreprise. Cartographiez les enjeux sectoriels et identifiez les quick wins stratégiques.',
       fullDescription: 'Atelier stratégique en présentiel pour dirigeants souhaitant clarifier leur vision IA et l\'aligner avec leur stratégie d\'entreprise. Cartographie des enjeux sectoriels, définition de la vision IA et identification des priorités stratégiques.',
       slug: 'formation-vision-ia-strategie',
       category: 'Intelligence Artificielle',
-      image: '/ia.png',
+      image: '/vision.png',
       duration: '7 heures',
       formateur: '',
       formationType: 'non-certifiante',
@@ -132,7 +252,7 @@ const formationsConfig = {
       fullDescription: 'Atelier pratique de 2 jours pour initier les premiers déploiements d\'outils IA générative, réinventer des processus métier clés avec l\'IA, former les équipes dirigeantes et créer un réseau de champions IA avec un plan de montée en compétences.',
       slug: 'formation-activation-ia-vision-action',
       category: 'Intelligence Artificielle',
-      image: '/ia.png',
+      image: '/activation.png',
       duration: '14 heures',
       formateur: '',
       formationType: 'non-certifiante',
@@ -255,7 +375,7 @@ const formationsConfig = {
       fullDescription: 'Atelier Design Thinking IA pour créer de nouveaux services et produits. Explorez comment l\'IA transforme la proposition de valeur client, générez de nouvelles sources de revenus, structurez un portefeuille de cas d\'usage innovants et introduisez la gouvernance IA responsable.',
       slug: 'formation-innovation-ia-offres-modeles',
       category: 'Intelligence Artificielle',
-      image: '/ia.png',
+      image: '/innovation.png',
       duration: '14 heures',
       formateur: '',
       formationType: 'non-certifiante',

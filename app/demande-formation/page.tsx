@@ -136,6 +136,7 @@ DATE_ENVOI: ${new Date().toLocaleDateString('fr-FR', {
   };
 
   const formations = [
+    { value: 'acculturation-flash-ia', label: 'Acculturation Flash: Comprendre l\'IA et ses impacts' },
     { value: 'ia-vente', label: 'IA et vente' },
     { value: 'vision-ia-strategie', label: 'Vision IA : De la curiosité à la stratégie' },
     { value: 'activation-ia-vision-action', label: 'Activation de l\'IA : Passer de la vision à l\'action' },
