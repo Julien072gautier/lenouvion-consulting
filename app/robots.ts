@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/', '/_next/', '/private/'],
       },
     ],
-    sitemap: 'https://test-accertif.lenouvion-consulting.fr/sitemap.xml',
+    sitemap: 'https://lenouvion-consulting.fr/sitemap.xml',
   }
 }

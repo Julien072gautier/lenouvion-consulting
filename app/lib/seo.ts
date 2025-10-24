@@ -104,7 +104,7 @@ export function generateFormationSEO(formationSlug: string): SEOData {
       "provider": {
         "@type": "EducationalOrganization",
         "name": "Lenouvion Consulting",
-        "url": "https://test-accertif.lenouvion-consulting.fr"
+        "url": "https://lenouvion-consulting.fr"
       },
       "hasCourseInstance": {
         "@type": "CourseInstance",
@@ -120,12 +120,12 @@ export function generateFormationSEO(formationSlug: string): SEOData {
         "price": formation.price,
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "url": `https://test-accertif.lenouvion-consulting.fr/formation/${formationSlug}`
+        "url": `https://lenouvion-consulting.fr/formation/${formationSlug}`
       },
       "educationalCredentialAwarded": formation.certification,
       "teaches": formation.skills,
       "image": formation.image,
-      "url": `https://test-accertif.lenouvion-consulting.fr/formation/${formationSlug}`
+      "url": `https://lenouvion-consulting.fr/formation/${formationSlug}`
     }
   }
 }
@@ -165,7 +165,7 @@ export function generateBreadcrumbStructuredData(breadcrumbs: Array<{name: strin
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://test-accertif.lenouvion-consulting.fr${item.url}`
+      "item": `https://lenouvion-consulting.fr${item.url}`
     }))
   }
 }
@@ -185,7 +185,7 @@ export function generateAllFormationsMetadata() {
       openGraph: {
         title: seoData.title,
         description: seoData.description,
-        url: `https://test-accertif.lenouvion-consulting.fr/formation/${slug}`,
+        url: `https://lenouvion-consulting.fr/formation/${slug}`,
         type: 'article',
         images: [
           {
@@ -203,7 +203,7 @@ export function generateAllFormationsMetadata() {
         images: [seoData.ogImage || `/images/formations/${slug}-og.jpg`],
       },
       alternates: {
-        canonical: `https://test-accertif.lenouvion-consulting.fr/formation/${slug}`,
+        canonical: `https://lenouvion-consulting.fr/formation/${slug}`,
       },
     }
   })
@@ -223,7 +223,7 @@ export function getFormationMetadata(slug: string): Metadata {
     openGraph: {
       title: seoData.title,
       description: seoData.description,
-      url: `https://test-accertif.lenouvion-consulting.fr/formation/${slug}`,
+      url: `https://lenouvion-consulting.fr/formation/${slug}`,
       type: 'article',
       images: [
         {
@@ -241,7 +241,7 @@ export function getFormationMetadata(slug: string): Metadata {
       images: [seoData.ogImage || `/images/formations/${slug}-og.jpg`],
     },
     alternates: {
-      canonical: `https://test-accertif.lenouvion-consulting.fr/formation/${slug}`,
+      canonical: `https://lenouvion-consulting.fr/formation/${slug}`,
     },
   }
 }

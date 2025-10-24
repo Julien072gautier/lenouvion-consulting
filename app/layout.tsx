@@ -41,14 +41,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://test-accertif.lenouvion-consulting.fr/'),
+  metadataBase: new URL('https://lenouvion-consulting.fr/'),
   alternates: {
-    canonical: 'https://test-accertif.lenouvion-consulting.fr/',
+    canonical: 'https://lenouvion-consulting.fr/',
   },
   openGraph: {
     title: 'Formation IA pour Dirigeants - Jacques-Henri Marin | Lenouvion Consulting',
     description: 'Jacques-Henri Marin aide les dirigeants de PME à faire de l\'IA un levier de leadership, pas un projet IT. 30% de gains dès le premier mois.',
-    url: 'https://test-accertif.lenouvion-consulting.fr/',
+    url: 'https://lenouvion-consulting.fr/',
     siteName: 'Lenouvion Consulting',
     locale: 'fr_FR',
     type: 'website',

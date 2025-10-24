@@ -3,7 +3,7 @@
 export const SEO_CONFIG = {
   // Informations de base
   siteName: 'Lenouvion Consulting',
-  siteUrl: 'https://test-accertif.lenouvion-consulting.fr',
+  siteUrl: 'https://lenouvion-consulting.fr',
   siteDescription: 'Formation IA pour Dirigeants - Jacques-Henri Marin aide les dirigeants de PME à faire de l\'IA un levier de leadership, pas un projet IT. 30% de gains dès le premier mois.',
   
   // Contact
